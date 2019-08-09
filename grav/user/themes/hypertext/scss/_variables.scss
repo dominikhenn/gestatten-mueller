@@ -5,11 +5,11 @@ $tertiary-color: #fff;
 $gray-color: #ddd;
 
 // Layout sizes
-$max-width: 1024px;
+$max-width: 1280px;
 
 $bp-tablet: 768px;
 $bp-desktop: 1024px;
-$bp-big-desktop: 1440px;
+$bp-big-desktop: $max-width;
 
 // Breakpoints
 @mixin tablet-up {
