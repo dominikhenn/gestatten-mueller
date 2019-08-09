@@ -5,4 +5,8 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 16px;
+
+  &--no-padding {
+    padding: 0;
+  }
 }

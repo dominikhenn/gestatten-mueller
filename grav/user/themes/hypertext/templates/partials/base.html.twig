@@ -4,11 +4,11 @@
 {% set html5 = structure.html_mode|default('default') == 'default' %}
 
 {% set allowCSS = page.header.allowCSS == 'enabled' or
-                    (page.header.allowCSS|default('default') == 'default' and 
-                     style.allowCSS == '1') %}
+    (page.header.allowCSS|default('default') == 'default' and
+    style.allowCSS == '1') %}
 {% set allowJS  = page.header.allowJS  == 'enabled' or
-                    (page.header.allowJS|default('default') == 'default' and 
-                     style.allowJS == '1') %}
+    (page.header.allowJS|default('default') == 'default' and
+    style.allowJS == '1') %}
 
 {# ------------------------------------------------------------------------ #}
 
@@ -18,12 +18,12 @@
 {# ## HEADLES RENDERING ## #}
 {% if uri.query('headless') %}
 <html>
-  <head>
+<head>
     <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
-  </head>
-  <body>
-  {{ block('content') }}
-  </body>
+</head>
+<body>
+{{ block('content') }}
+</body>
 </html>
 
 
@@ -31,74 +31,82 @@
 {# ## ORDINARY RENDER ## #}
 <html lang="{{ grav.language.getActive ?: grav.config.site.default_lang }}">
 <head>
-{% block head %}
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="canonical" href="{{ page.url(true, true) }}" />
+    {% block head %}
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta data-react-helmet="true" name="viewport"
+              content="width=device-width, maximum-scale=1, minimum-scale=1, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+        <link rel="canonical" href="{{ page.url(true, true) }}"/>
 
-  {% for meta in page.metadata %}
-    <meta {% if meta.name %}name="{{ meta.name }}" {% endif %}{% if meta.http_equiv %}http-equiv="{{ meta.http_equiv }}" {% endif %}{% if meta.charset %}charset="{{ meta.charset }}" {% endif %}{% if meta.property %}property="{{ meta.property }}" {% endif %}{% if meta.content %}content="{{ meta.content }}" {% endif %}/>
-  {% endfor %}
+        {% for meta in page.metadata %}
+            <meta {% if meta.name %}name="{{ meta.name }}"
+                  {% endif %}{% if meta.http_equiv %}http-equiv="{{ meta.http_equiv }}"
+                  {% endif %}{% if meta.charset %}charset="{{ meta.charset }}"
+                  {% endif %}{% if meta.property %}property="{{ meta.property }}"
+                  {% endif %}{% if meta.content %}content="{{ meta.content }}" {% endif %}/>
+        {% endfor %}
 
-  <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
+        <title>{% if header.title %}{{ header.title|e('html') }} | {% endif %}{{ site.title|e('html') }}</title>
 
-  {% if structure.use_favicon %}
-  <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
-  {% endif %}
+        {% if structure.use_favicon %}
+            <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}"/>
+        {% endif %}
 
-  {% include 'partials/page/js-css.html.twig' %}
-{% endblock head %}
+        {% include 'partials/page/js-css.html.twig' %}
+    {% endblock head %}
 </head>
 
 
-<body class="{{ page.template }}{{ page.header.bodyClasses ? ' {{ page.header.bodyClasses }}' : ''}}">
-  {# ## HEADER ## #}
-  {{ html5 ? '<header id="header">' : '<div id="header" class="header">' }}
-  {% block header %}
+<body class="{{ page.template }}{{ page.header.bodyClasses ? ' {{ page.header.bodyClasses }}' : '' }}">
+{# ## HEADER ## #}
+{{ html5 ? '<header id="header">' : '<div id="header" class="header">' }}
+{% block header %}
     {% include 'partials/page/header.html.twig' %}
-  {% endblock %}
-  {{ html5 ? '</header>' : '</div>' }}
-  
-  {# ## BODY ## #}
-  {{ html5 ? '<main>' : '<div class="main">' }}
-    {% if grav.messages.all %}
-      {% include 'partials/page/messages.html.twig' %}
-    {% endif %}
+{% endblock %}
+{{ html5 ? '</header>' : '</div>' }}
 
-    {{ html5 ? '<article>' : '<div class="item">'}}
+{% include 'partials/page/introduction.html.twig' with {template: page.template} %}
+{% include 'partials/page/separator.html.twig' with {direction: 'left', color: 'tertiary'} %}
 
-    {# ARTICLE HEAD #}
-    {% block item_head %}
+{# ## BODY ## #}
+{{ html5 ? '<main>' : '<div class="main">' }}
+{% if grav.messages.all %}
+    {% include 'partials/page/messages.html.twig' %}
+{% endif %}
+
+{{ html5 ? '<article>' : '<div class="item">' }}
+
+{# ARTICLE HEAD #}
+{% block item_head %}
     {% include 'partials/item/header.html.twig' %}
-    {% endblock %}
+{% endblock %}
 
-    {# ARTICLE BODY #}
-    {% block content %}
+{# ARTICLE BODY #}
+{% block content %}
     {{ page.content|raw }}
-    {% endblock %}
+{% endblock %}
 
-    {# CHILD PAGES #}
-    {% block children %}
+{# CHILD PAGES #}
+{% block children %}
     {% include 'partials/item/children.html.twig' %}
-    {% endblock %}
+{% endblock %}
 
-    {# ARTICLE FOOTER #}
-    {% block item_footer %}
+{# ARTICLE FOOTER #}
+{% block item_footer %}
     {% include 'partials/item/footer.html.twig' %}
-    {% endblock %}
+{% endblock %}
 
-    {{ html5 ? '</article>' : '</div>'}}
-  {{ html5 ? '</main>' : '</div>' }}
+{{ html5 ? '</article>' : '</div>' }}
+{{ html5 ? '</main>' : '</div>' }}
 
-  {# ## FOOTER ## #}
-  {{ html5 ? '<footer>' : '<div class="footer">' }}
-  {% block footer %}
+{# ## FOOTER ## #}
+{{ html5 ? '<footer>' : '<div class="footer">' }}
+{% block footer %}
     {% include 'partials/page/footer.html.twig' %}
-  {% endblock %}
-  {{ html5 ? '</footer>' : '</div>' }}
+{% endblock %}
+{{ html5 ? '</footer>' : '</div>' }}
 
-  {% include 'partials/page/mobile-sidebar.html.twig' %}
+{% include 'partials/page/mobile-sidebar.html.twig' %}
 
 </body>
 {% endif %}

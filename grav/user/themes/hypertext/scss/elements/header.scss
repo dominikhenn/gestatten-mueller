@@ -22,20 +22,20 @@ header,
       display: flex;
       flex: 1 0 0;
 
-      @media (min-width: $bp-tablet) {
+      @include tablet-up {
         height: 80px;
       }
 
       &.desktop-menu {
         display: none;
 
-        @media (min-width: $bp-tablet) {
+        @include tablet-up {
           display: flex;
         }
       }
 
       &.mobile-menu-toggle {
-        @media (min-width: $bp-tablet) {
+        @include tablet-up {
           display: none;
         }
 
@@ -58,7 +58,7 @@ header,
           transition: height 0.5s ease;
           height: 30px;
 
-          @media (min-width: 768px) {
+          @include tablet-up {
             height: 60px;
           }
         }
@@ -97,7 +97,7 @@ header,
 
               &:hover {
                 color: $tertiary-color;
-                transition: color 0.5s ease-in-out;
+                transition: color 0.3s ease-in-out;
               }
 
               &.active {

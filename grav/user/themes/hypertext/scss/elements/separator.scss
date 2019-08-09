@@ -1,0 +1,55 @@
+@import '../variables';
+
+.separator{
+  position: relative;
+  margin-top: -49px;
+
+  @include tablet-up {
+    margin-top: -100px;
+  }
+
+  svg {
+    height: 50px;
+    width: 100%;
+
+    @include tablet-up {
+      height: 100px;
+    }
+  }
+
+  .side {
+    display: none;
+  }
+
+  path.top {
+    fill: transparent;
+  }
+
+  path.bottom {
+    fill: $primary-color;
+  }
+
+  &--left {
+    .side.separator__left {
+      display: block;
+    }
+  }
+
+  &--right {
+    .side.separator__right {
+      display: block;
+    }
+  }
+
+  &--secondary {
+    path.bottom {
+      fill: $secondary-color;
+    }
+  }
+
+  &--tertiary {
+    path.bottom {
+      fill: $tertiary-color
+    }
+  }
+}
