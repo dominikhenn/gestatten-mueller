@@ -1,0 +1,16 @@
+@import '../variables';
+
+footer,
+.footer {
+  color: $tertiary-color;
+  background-color: $secondary-color;
+  border-top: 2px solid $tertiary-color;
+  text-align: center;
+  height: 90px;
+
+  .back-to-top-wrapper {
+    color: $tertiary-color;
+    font-size: 40px;
+    cursor: pointer;
+  }
+}

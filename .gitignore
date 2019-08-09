@@ -1,2 +1,4 @@
 .idea
-grav/vendor
+grav/vendor/
+grav/cache/
+grav/logs/

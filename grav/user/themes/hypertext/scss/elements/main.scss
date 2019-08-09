@@ -1,0 +1,12 @@
+@import '../variables';
+
+main,
+.main {
+  margin-top: 46px;
+  padding: 20px 0;
+
+  @media (min-width: $bp-tablet) {
+    margin-top: 80px;
+    padding: 40px 0;
+  }
+}

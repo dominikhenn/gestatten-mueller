@@ -10,11 +10,10 @@ function scrollHeader() {
 }
 
 jQuery(document).ready(function($){
-
     scrollHeader();
 
     // Scroll Events
-    if (!isTouch){
+    if (!isTouch) {
         $(document).scroll(function() {
             scrollHeader();
         });
@@ -27,28 +26,14 @@ jQuery(document).ready(function($){
         }
     });
 
-    //Smooth scroll to start
-    $('#to-start').click(function(){
-        var start_y = $('#start').position().top;
-        var header_offset = 45;
-        window.scroll({ top: start_y - header_offset, left: 0, behavior: 'smooth' });
-        return false;
-    });
-
     //Smooth scroll to top
-    $('#to-top').click(function(){
+    $('.back-to-top-wrapper').click(function(){
         window.scroll({ top: 0, left: 0, behavior: 'smooth' });
         return false;
     });
 
     // Responsive Menu
-    $('#toggle').click(function () {
-        $(this).toggleClass('active');
-        $('#overlay').toggleClass('open');
-        $('body').toggleClass('mobile-nav-open');
+    $('.toogle-mobile-menu').click(function () {
+        $('.sidebar').toggleClass('sidebar--active');
     });
-
-    // Tree Menu
-    // $(".tree").treemenu({delay:300});
-
 });
