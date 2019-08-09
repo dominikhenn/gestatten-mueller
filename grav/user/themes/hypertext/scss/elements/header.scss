@@ -8,7 +8,7 @@ header,
   top: 0;
   z-index: 2;
   width: 100%;
-  box-shadow: 0 10px 50px 0 rgba(0,0,0,.5);
+  box-shadow: 0 10px 50px 0 rgba(0,0,0,.7);
 
   .navbar {
     align-items: stretch;
@@ -17,7 +17,7 @@ header,
     justify-content: space-between;
 
     &-section {
-      height: 46px;
+      height: 56px;
       transition: all 0.5s ease;
       align-items: center;
       display: flex;
@@ -57,7 +57,7 @@ header,
         img {
           display: inherit;
           transition: height 0.5s ease;
-          height: 30px;
+          height: 40px;
 
           @include tablet-up {
             height: 60px;
@@ -144,7 +144,7 @@ header,
   &.scrolled {
     .navbar {
       &-section {
-        height: 46px;
+        height: 56px;
 
         &.logo {
           img {
