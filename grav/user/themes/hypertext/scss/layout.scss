@@ -1,0 +1,200 @@
+@import './variables';
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-rendering: optimizeLegibility;
+}
+
+a,
+a:visited,
+a:active {
+    color: $primary-color;
+}
+
+ul, ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    border: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: $max-width;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 16px;
+}
+
+header,
+.header {
+    background-color: $secondary-color;
+    border-bottom: 2px solid $tertiary-color;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+
+    .navbar {
+        align-items: stretch;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &-section {
+            height: 46px;
+            transition: all 0.5s ease;
+            align-items: center;
+            display: flex;
+            flex: 1 0 0;
+
+            @media (min-width: $bp-tablet) {
+                height: 80px;
+            }
+
+            &.desktop-menu {
+                display: none;
+
+                @media (min-width: $bp-tablet) {
+                    display: flex;
+                }
+            }
+
+            &:not(:first-child):last-child {
+                justify-content: flex-end;
+            }
+
+            &.logo {
+                text-decoration: none;
+
+                img {
+                    display: inherit;
+                    transition: height 0.5s ease;
+                    height: 30px;
+
+                    @media (min-width: 768px) {
+                        height: 60px;
+                    }
+                }
+            }
+
+            nav {
+                display: block;
+            }
+
+            .dropmenu {
+                ul {
+                    white-space: nowrap;
+                    margin: 0;
+                    display: flex;
+                }
+
+                &.animated {
+                    ul li {
+                        transition: background 0.7s, color 0.5s;
+                        position: relative;
+                        margin: 0;
+
+                        &:hover > ul {
+                            display: block;
+                            visibility: visible;
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+
+                        a {
+                            text-decoration: none;
+                            padding: 7px 30px 7px 20px;
+                            display: block;
+                            color: $gray-color;
+                            font-size: 16px;
+
+                            &:hover {
+                                color: $tertiary-color;
+                                transition: color 0.5s ease-in-out;
+                            }
+
+                            &.active {
+                                color: $tertiary-color;
+                                font-weight: bold;
+                            }
+
+                            &:only-child {
+                                padding-right: 20px;
+                            }
+                        }
+                    }
+
+                    ul ul {
+                        transition: transform 0.3s, opacity 0.5s;
+                        opacity: 0;
+                        transform: translateY(-10px);
+                        position: absolute;
+                        top: 100%;
+                        list-style: none;
+                        background: #fff;
+                        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+                        visibility: hidden;
+
+                        a,
+                        a.active {
+                            color: $secondary-color;
+
+                            &:hover {
+                                color: $primary-color;
+                            }
+                        }
+                    }
+                }
+
+                & > ul > li {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    &.scrolled {
+        .navbar {
+            &-section {
+                height: 46px;
+
+                &.logo {
+                    img {
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+main,
+.main {
+    margin-top: 46px;
+    padding: 20px 0;
+
+    @media (min-width: $bp-tablet) {
+        margin-top: 80px;
+        padding: 40px 0;
+    }
+}
+
+footer,
+.footer {
+    color: $tertiary-color;
+    background-color: $secondary-color;
+    border-top: 2px solid $tertiary-color;
+    text-align: center;
+    height: 44px;
+}

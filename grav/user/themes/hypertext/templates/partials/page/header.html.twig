@@ -1,0 +1,14 @@
+<section class="container">
+    <nav class="navbar">
+        <section class="navbar-section logo">
+            <a href="{{ home_url }}">{{ media['theme://images/logo.png'].html('', site.title|e('html')) }}</a>
+        </section>
+        <section class="navbar-section desktop-menu">
+            <nav class="dropmenu animated">
+                {% block header_navigation %}
+                    {% include 'partials/page/navigation.html.twig' %}
+                {% endblock %}
+            </nav>
+        </section>
+    </nav>
+</section>

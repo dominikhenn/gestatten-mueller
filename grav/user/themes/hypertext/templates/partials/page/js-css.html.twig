@@ -1,0 +1,14 @@
+{% block stylehseets %}
+  {% do assets.addCss('theme://css/layout.min.css') %}
+{% endblock %}
+
+{% block javascripts %}
+  {% do assets.addJs('jquery', 101) %}
+  {% do assets.addJs('theme://js/site.js', {group:'bottom'}) %}
+{% endblock %}
+
+{# Regular CSS/JS includes #}
+{% block assets deferred %}
+  {% if allowCSS %}{{ assets.css()|raw }}{% endif %}
+  {% if allowJS %}{{ assets.js()|raw }}{% endif %}
+{% endblock %}

@@ -1,0 +1,19 @@
+version: '3.7'
+services:
+  php:
+    build: ./grav
+    volumes:
+      - ./grav:/srv/grav:cached
+    environment:
+      - COMPOSER_ARGS=
+      - SITE_URL=${SITE_URL}
+
+  nginx:
+    image: nginx:1.15-alpine
+    depends_on:
+      - php
+    volumes:
+      - ./grav:/srv/grav-public
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "${WEB_PORT}:80"

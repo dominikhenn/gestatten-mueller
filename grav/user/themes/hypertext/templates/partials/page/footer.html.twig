@@ -1,0 +1,11 @@
+<p>&copy; {{ "now"|date('Y') }}, {{ 'THEME_HYPERTEXT.FOOTER.BY_LINE'|t }}</p>
+
+{% block bottom %}
+{% if allowJS %}
+{{ assets.js('bottom')|raw }}
+{% endif %}
+
+{% if allowCSS %}
+{{ assets.css('bottom')|raw }}
+{% endif %}
+{% endblock %}
