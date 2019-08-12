@@ -9,6 +9,7 @@
   }
 
   svg {
+    display: block;
     height: 50px;
     width: 100%;
 
@@ -17,28 +18,12 @@
     }
   }
 
-  .side {
-    display: none;
-  }
-
   path.top {
     fill: transparent;
   }
 
   path.bottom {
     fill: $primary-color;
-  }
-
-  &--left {
-    .side.separator__left {
-      display: block;
-    }
-  }
-
-  &--right {
-    .side.separator__right {
-      display: block;
-    }
   }
 
   &--secondary {

@@ -1,13 +1,13 @@
-{% set direction = direction ? ' separator--' ~ direction : '' %}
-{% set color = color ? ' separator--' ~ color : '' %}
-
-<div class="separator{{ direction }}{{ color }}">
+<div class="separator{{ direction ? ' separator--' ~ direction : '' }}{{ color ? ' separator--' ~ color : '' }}">
+    {% if not direction or direction == 'left' %}
     <svg class="side separator__left" viewBox='0 0 100 100' preserveAspectRatio='none'>
         <path d='m 0,0 h 100 l -100,95z' class='top' />
         <path d='m 100,100 h -100 l 0,-90z' class='bottom' />
     </svg>
+    {% elseif direction == 'right' %}
     <svg class="side separator__right" viewBox='0 0 100 100' preserveAspectRatio='none'>
         <path d='m 0,0 h 100 l -100,95z' class='top' />
         <path d='m 0,100 h 100 l 0,-90z' class='bottom' />
     </svg>
+    {% endif %}
 </div>

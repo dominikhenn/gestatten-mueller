@@ -4,7 +4,10 @@ footer,
 .footer {
   color: $tertiary-color;
   text-align: center;
-  height: 150px;
+
+  &__content-wrapper {
+    height: 100px;
+  }
 
   .back-to-top-wrapper {
     color: $tertiary-color;
