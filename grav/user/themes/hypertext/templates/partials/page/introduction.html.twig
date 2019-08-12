@@ -3,7 +3,8 @@
     <section class="container container--no-padding">
         <div class="introduction__image">
             <div class="introduction__gradient introduction__gradient--left"></div>
-            {{ media['theme://images/teaser1440.jpg'].html('', site.title|e('html')) }}
+            {{ media['theme://images/teaser1440.jpg'].html('', site.title|e('html'), 'introduction__image-bg') }}
+            {{ media['theme://images/mm.png'].html('', site.title|e('html'), 'introduction__image-mm') }}
             <div class="introduction__gradient introduction__gradient--right"></div>
         </div>
     </section>

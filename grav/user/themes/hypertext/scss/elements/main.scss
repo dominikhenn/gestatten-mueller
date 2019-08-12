@@ -9,4 +9,10 @@ main,
   @media (min-width: $bp-tablet) {
     padding-bottom: 80px;
   }
+
+  article {
+    ul, ol {
+      margin-left: 16px;
+    }
+  }
 }

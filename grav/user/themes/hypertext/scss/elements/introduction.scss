@@ -10,11 +10,30 @@
   &__image {
     position: relative;
 
-    img {
+    &-bg {
       width: 100%;
       height: calc(100vh + 20px);
       object-fit: cover;
       font-family: 'object-fit: cover'; // For object-fit-images polyfill
+    }
+
+    &-mm {
+      width: 60vw;
+      position: absolute;
+      bottom: 100px;
+      right: 50px;
+      max-width: 250px;
+
+      @media (min-width: $bp-tablet) {
+        bottom: 125px;
+        max-width: 300px;
+      }
+
+      @media (min-width: $bp-desktop) {
+        bottom: 150px;
+        right: 100px;
+        max-width: 350px;
+      }
     }
   }
 

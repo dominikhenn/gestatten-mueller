@@ -2,7 +2,7 @@
 
 ![](assets/quark-screenshots.jpg)
 
-**Quark** is the new default theme for [Grav CMS](../../../index.phpcom/getgrav/grav).  This theme is built with the [Spectre.css](../../../index.phpepan2.github.io/spectre/) framework and provides a powerful base for developing your own themes. Quark uses functionality that is only available in Grav 1.4+, as such you cannot run Quark on earlier versions of Grav.
+**Quark** is the new default theme for [Grav CMS](http://github.com/getgrav/grav).  This theme is built with the [Spectre.css](https://picturepan2.github.io/spectre/) framework and provides a powerful base for developing your own themes. Quark uses functionality that is only available in Grav 1.4+, as such you cannot run Quark on earlier versions of Grav.
 
 ## Features
 
@@ -29,11 +29,11 @@
 
 Installing the Quark theme can be done in one of two ways. Our GPM (Grav Package Manager) installation method enables you to quickly and easily install the theme with a simple terminal command, while the manual method enables you to do so via a zip file. 
 
-The theme by itself is useful, but you may have an easier time getting up and running by installing a skeleton. The Quark theme can be found in both the [One-page](../../../index.php.com/getgrav/grav-skeleton-onepage-site) and [Blog Site](../../../index.php.com/getgrav/grav-skeleton-blog-site) which are self-contained repositories for a complete sites which include: sample content, configuration, theme, and plugins.
+The theme by itself is useful, but you may have an easier time getting up and running by installing a skeleton. The Quark theme can be found in both the [One-page](https://github.com/getgrav/grav-skeleton-onepage-site) and [Blog Site](https://github.com/getgrav/grav-skeleton-blog-site) which are self-contained repositories for a complete sites which include: sample content, configuration, theme, and plugins.
 
 ## GPM Installation (Preferred)
 
-The simplest way to install this theme is via the [Grav Package Manager (GPM)](../../../index.phpetgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line).  From the root of your Grav install type:
+The simplest way to install this theme is via the [Grav Package Manager (GPM)](http://learn.getgrav.org/advanced/grav-gpm) through your system's Terminal (also called the command line).  From the root of your Grav install type:
 
     bin/gpm install quark
 
@@ -41,7 +41,7 @@ This will install the Quark theme into your `/user/themes` directory within Grav
 
 ## Manual Installation
 
-To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `quark`. You can find these files either on [GitHub](../../../index.php.com/getgrav/grav-theme-quark) or via [GetGrav.org](../../../index.php.org/downloads/themes).
+To install this theme, just download the zip version of this repository and unzip it under `/your/site/grav/user/themes`. Then, rename the folder to `quark`. You can find these files either on [GitHub](https://github.com/getgrav/grav-theme-quark) or via [GetGrav.org](http://getgrav.org/downloads/themes).
 
 You should now have all the theme files under
 
