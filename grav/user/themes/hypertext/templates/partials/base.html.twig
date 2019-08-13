@@ -76,24 +76,19 @@
 
 {{ html5 ? '<article>' : '<div class="item">' }}
 
-{# ARTICLE HEAD #}
-{% block item_head %}
-    {% include 'partials/item/header.html.twig' %}
-{% endblock %}
+{# Title & Subtitle #}
+<section class="container">
+    {% if not page.home() %}
+        <h2>
+            <a href="{{ page.url }}">{{ page.title }}</a>
+        </h2>
+    {% endif %}
+    {% if page.header.subtitle %}<strong>{{ page.header.subtitle }}</strong>{% endif %}
+</section>
 
 {# ARTICLE BODY #}
 {% block content %}
     {{ page.content|raw }}
-{% endblock %}
-
-{# CHILD PAGES #}
-{% block children %}
-    {% include 'partials/item/children.html.twig' %}
-{% endblock %}
-
-{# ARTICLE FOOTER #}
-{% block item_footer %}
-    {% include 'partials/item/footer.html.twig' %}
 {% endblock %}
 
 {{ html5 ? '</article>' : '</div>' }}
