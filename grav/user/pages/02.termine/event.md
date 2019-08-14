@@ -6,7 +6,7 @@ content:
     items:
         - '@self.children'
     order:
-        by: folder
+        by: date
         dir: desc
     sibling_links: false
 show_header_image: false

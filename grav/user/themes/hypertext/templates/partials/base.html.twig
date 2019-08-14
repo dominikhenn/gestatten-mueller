@@ -77,14 +77,16 @@
 {{ html5 ? '<article>' : '<div class="item">' }}
 
 {# Title & Subtitle #}
-<section class="container">
-    {% if not page.home() %}
+
+{% if not page.home() %}
+    <section class="container">
         <h2>
             <a href="{{ page.url }}">{{ page.title }}</a>
         </h2>
-    {% endif %}
-    {% if page.header.subtitle %}<strong>{{ page.header.subtitle }}</strong>{% endif %}
-</section>
+        {% if page.header.subtitle %}<strong>{{ page.header.subtitle }}</strong>{% endif %}
+    </section>
+{% endif %}
+
 
 {# ARTICLE BODY #}
 {% block content %}
