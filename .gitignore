@@ -2,3 +2,5 @@
 grav/vendor/
 grav/cache/
 grav/logs/
+grav/user/data/notifications/
+grav/user/data/feed/

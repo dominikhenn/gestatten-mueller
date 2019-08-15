@@ -13,6 +13,7 @@ en:
             BY_LINE: Michael Müller GbR
         CHILDREN:
             READ_MORE: Read more
+            TIME: h
 de:
     THEME_HYPERTEXT:
         PAGINATION:
@@ -27,4 +28,5 @@ de:
         FOOTER:
             BY_LINE: Michael Müller GbR
         CHILDREN:
-            READ_MORE: Read more
+            READ_MORE: Mehr lesen
+            TIME: Uhr

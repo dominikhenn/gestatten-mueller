@@ -5,8 +5,10 @@ allowJS: default
 content:
     items:
         - '@self.children'
+    dateRange:
+        start: today
+        field: header.event_date
     order:
-        by: date
         dir: desc
     sibling_links: false
 show_header_image: false
