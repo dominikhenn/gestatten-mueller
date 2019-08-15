@@ -19,11 +19,22 @@
 
 {# ------------------------------------------------------------------------ #}
 
-<hr/>
 {% if html5 %}
   <section class="snippet{% if page.taxonomy.category %}{% for cat in page.taxonomy.category %} cat_{{ cat|hyphenize }}{% endfor %}{% endif %}">
 {% else %}
   <div class="snippet{% if page.taxonomy.category %}{% for cat in page.taxonomy.category %} cat_{{ cat|hyphenize }}{% endfor %}{% endif %}">
+{% endif %}
+
+{# Date #}
+{% if show_date %}
+  {{ show_image and thumbnail_image ? '<br>' : '' }}
+  <sub class="snippet__datetime">
+      {% if html5 %}
+          <time datetime="{{ page.date|date("c") }}">{{ page.date|date('d.m.Y') }}</time>
+      {% else %}
+          <span class="datetime">{{ page.date|date(system.pages.dateformat.short) }}</span>
+      {% endif %}
+  </sub>
 {% endif %}
 
 {# Title & Subtitle #}
@@ -38,18 +49,6 @@
 {# Must be one line to avoid dangling, clickable space #}
 {% if show_image and thumbnail_image %}
   <a href="{{ page.url }}"><img src="{{ header_image_url }}" width="{{ header_image_width }}" height="{{ header_image_height }}"></a>
-{% endif %}
-
-{# Date #}
-{% if show_date %}
-{{ show_image and thumbnail_image ? '<br>' : '' }}
-<sub>
-  {% if html5 %}
-    <time datetime="{{ page.date|date("c") }}">{{ page.date|date(system.pages.dateformat.short) }}</time>
-  {% else %}
-    <span class="datetime">{{ page.date|date(system.pages.dateformat.short) }}</span>
-  {% endif %}
-</sub>
 {% endif %}
 
 {# Categories #}
@@ -69,7 +68,7 @@
   {{ page.summary|raw }}
 {% else %}
   {{ page.content|truncate(550)|raw }}
-  <p><a href="{{ page.url }}">{{ 'THEME_HYPERTEXT.CHILDREN.READ_MORE'|t }}</a></p>
+  <p class="align-right"><a href="{{ page.url }}">{{ 'THEME_HYPERTEXT.CHILDREN.READ_MORE'|t }}</a></p>
 {% endif %}
 
 {# Children #}

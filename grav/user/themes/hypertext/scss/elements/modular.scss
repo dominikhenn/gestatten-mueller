@@ -1,0 +1,17 @@
+@import '../variables';
+
+.modular-wrapper {
+  .container {
+    min-height: 200px;
+  }
+
+  &--welcome,
+  &--news {
+    background: $tertiary-color;
+  }
+
+  &--news,
+  &--contact {
+    color: $tertiary-color;
+  }
+}

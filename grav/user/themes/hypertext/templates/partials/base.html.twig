@@ -65,11 +65,10 @@
 {% endblock %}
 {{ html5 ? '</header>' : '</div>' }}
 
-{% include 'partials/page/introduction.html.twig' with {template: page.template} %}
-{% include 'partials/page/separator.html.twig' with {direction: 'left', color: 'tertiary'} %}
+{% include 'partials/page/introduction.html.twig' with {template: page.template, page: page.slug} %}
 
 {# ## BODY ## #}
-{{ html5 ? '<main>' : '<div class="main">' }}
+{{ html5 ? '<main class="main ' ~ 'main--' ~ page.template ~ '">' : '<div class="main ' ~ 'main--' ~ page.template ~ '">' }}
 {% if grav.messages.all %}
     {% include 'partials/page/messages.html.twig' %}
 {% endif %}

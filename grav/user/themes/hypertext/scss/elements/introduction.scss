@@ -39,6 +39,12 @@
 
   &--small {
     height: 300px;
+
+    .introduction__image {
+      &-bg {
+        height: 300px;
+      }
+    }
   }
 
   &__gradient {

@@ -6,3 +6,5 @@
 - [ ] Remove unneeded CSS
 - [ ] Modular
 - [ ] Content
+- [ ] Remove jQuery
+- [ ] Event item date

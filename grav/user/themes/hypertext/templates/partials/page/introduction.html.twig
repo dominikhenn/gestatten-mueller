@@ -1,12 +1,13 @@
 {% if template != 'modular' %}
-<div class="introduction">
+<div class="introduction{% if page != 'home' %} introduction--small{% endif %}">
     <section class="container container--no-padding">
         <div class="introduction__image">
             <div class="introduction__gradient introduction__gradient--left"></div>
             {{ media['theme://images/teaser1440.jpg'].html('', site.title|e('html'), 'introduction__image-bg') }}
-            {{ media['theme://images/mm.png'].html('', site.title|e('html'), 'introduction__image-mm') }}
+            {% if page == 'home' %}{{ media['theme://images/mm.png'].html('', site.title|e('html'), 'introduction__image-mm') }}{% endif %}
             <div class="introduction__gradient introduction__gradient--right"></div>
         </div>
     </section>
 </div>
+{% include 'partials/page/separator.html.twig' with {direction: 'left', color: 'tertiary'} %}
 {% endif %}

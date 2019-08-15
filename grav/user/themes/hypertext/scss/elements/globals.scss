@@ -34,6 +34,7 @@ h2 {
   font-size: 45px;
   color: $secondary-color;
   margin-left: 20px;
+  margin-bottom: 16px;
 
   @include tablet-up {
     font-size: 56px;
@@ -47,6 +48,7 @@ h2 {
 
 h3 {
   color: $primary-color;
+  font-size: 20px;
 
   a, a:visited, a:active {
     text-decoration: none;
@@ -72,4 +74,8 @@ img {
 
 .hidden {
   display: none;
+}
+
+.align-right {
+  text-align: right;
 }
