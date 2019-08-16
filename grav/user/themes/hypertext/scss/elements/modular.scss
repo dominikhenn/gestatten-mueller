@@ -8,10 +8,45 @@
   &--welcome,
   &--news {
     background: $tertiary-color;
+
+    .container {
+      margin-bottom: 100px;
+    }
   }
 
-  &--news,
+  &--events,
   &--contact {
     color: $tertiary-color;
+
+    .container {
+      margin-bottom: 100px;
+    }
+
+    h2 {
+      color: $tertiary-color;
+    }
+  }
+
+  &--events {
+    .child-separator__content {
+      background: $secondary-color;
+    }
+
+    .snippet--event {
+      background: $secondary-color;
+    }
+
+    .snippet__date-circle {
+      border-color: $tertiary-color;
+      color: $tertiary-color;
+    }
+
+    .snippet__info-headline {
+      color: $tertiary-color;
+    }
+
+    .snippet__info-content {
+      color: $gray-color;
+    }
   }
 }

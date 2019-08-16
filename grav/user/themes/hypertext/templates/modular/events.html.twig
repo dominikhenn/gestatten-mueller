@@ -1,7 +1,20 @@
 <div class="modular-wrapper modular-wrapper--events">
     <section class="container">
         <h2>Events</h2>
-        ...
+        {% set collection = page.find('/termine').collection()|length > 0 ? page.find('/termine').collection().slice(0, 5) : [] %}
+
+        {% if collection|length > 0 %}
+            {% set year = '' %}
+            {% for child in collection %}
+                {% if child.header.event_date|date('Y-m-d') >= 'now'|date('Y-m-d') %}
+                    {% if year != child.header.event_date|date('Y') %}
+                        {% set year = child.header.event_date|date('Y') %}
+                        <div class="child-separator"><div class="child-separator__content">{{ child.header.event_date|date('Y') }}</div></div>
+                    {% endif %}
+                    {% include 'partials/item/event-summary.html.twig' with {'page':child, parent:page} %}
+                {% endif %}
+            {% endfor %}
+        {% endif %}
     </section>
     {% include 'partials/page/separator.html.twig' with {direction: 'left', color: 'tertiary'} %}
 </div>

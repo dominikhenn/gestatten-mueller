@@ -5,7 +5,7 @@
 {% if html5 %}
   <section class="snippet snippet--event{% if page.taxonomy.category %}{% for cat in page.taxonomy.category %} cat_{{ cat|hyphenize }}{% endfor %}{% endif %}">
 {% else %}
-  <div class="snippet{% if page.taxonomy.category %}{% for cat in page.taxonomy.category %} cat_{{ cat|hyphenize }}{% endfor %}{% endif %}">
+  <div class="snippet snippet--event{% if page.taxonomy.category %}{% for cat in page.taxonomy.category %} cat_{{ cat|hyphenize }}{% endfor %}{% endif %}">
 {% endif %}
 
     <div class="snippet__date-circle">

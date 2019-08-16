@@ -1,7 +1,11 @@
 <div class="modular-wrapper modular-wrapper--news">
     <section class="container">
         <h2>News</h2>
-        ...
+        {% set collection = page.find('/news').collection()|length > 0 ? page.find('/news').collection().slice(0, 2) : [] %}
+
+        {% for child in collection %}
+            {% include 'partials/item/summary.html.twig' with {'show_date': true, 'page':child, parent:page} %}
+        {% endfor %}
     </section>
     {% include 'partials/page/separator.html.twig' with {direction: 'right', color: 'secondary'} %}
 </div>

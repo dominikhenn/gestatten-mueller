@@ -13,7 +13,7 @@
 
 {% set show_subtitle = parent.header.render.children.subtitle ?? true %}
 {% set show_cat = parent.header.render.children.category ?? true %}
-{% set show_date = parent.header.render.children.date ?? false %}
+{% set show_date = show_date or parent.header.render.children.date ?? false %}
 {% set show_children = parent.header.render.children.nested_children ?? true %}
 {% set inner_children = page.collection()|length > 0 ? page.collection() : page.children.visible %}
 
@@ -68,8 +68,8 @@
   {{ page.summary|raw }}
 {% else %}
   {{ page.content|truncate(550)|raw }}
-  <p class="align-right"><a href="{{ page.url }}">{{ 'THEME_HYPERTEXT.CHILDREN.READ_MORE'|t }}</a></p>
 {% endif %}
+<p class="align-right"><a href="{{ page.url }}">{{ 'THEME_HYPERTEXT.CHILDREN.READ_MORE'|t }}</a></p>
 
 {# Children #}
 {% if show_children and inner_children|length > 0 %}
