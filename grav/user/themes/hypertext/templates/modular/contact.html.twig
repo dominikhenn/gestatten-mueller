@@ -1,6 +1,13 @@
 <div class="modular-wrapper modular-wrapper--contact">
     <section class="container">
         <h2>Contact</h2>
-        ...
+        <div class="contact-content">
+            <div class="contact-text">
+                {{ page.content|raw }}
+            </div>
+            <div class="call-to-action">
+                <a class="btn btn-primary" href="{{ page.find('/kontakt').url() }}">{{ 'THEME_HYPERTEXT.CONTACT.FORM'|t }}</a>
+            </div>
+        </div>
     </section>
 </div>

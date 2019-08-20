@@ -1,0 +1,27 @@
+@import '../variables';
+
+.btn,
+a.btn {
+  display: block;
+  padding: 8px 24px;
+  background-color: $tertiary-color;
+  font-size: 18px;
+  font-weight: bold;
+  color: $secondary-color;
+  width: calc(100% - 48px);
+  border: 1px solid;
+  border-color: $primary-color;
+  border-radius: 8px;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $primary-color;
+    color: $tertiary-color;
+  }
+
+  @include tablet-up {
+    max-width: 300px;
+  }
+}

@@ -6,7 +6,19 @@ footer,
   text-align: center;
 
   &__content-wrapper {
-    height: 100px;
+    height: 200px;
+  }
+
+  &__facebook {
+    svg {
+      height: 30px;
+    }
+  }
+
+  &__menu {
+    a {
+      color: $tertiary-color;
+    }
   }
 
   .back-to-top-wrapper {

@@ -14,6 +14,8 @@ en:
         CHILDREN:
             READ_MORE: Read more
             TIME: h
+        CONTACT:
+            FORM: Contact form
 de:
     THEME_HYPERTEXT:
         PAGINATION:
@@ -30,3 +32,5 @@ de:
         CHILDREN:
             READ_MORE: Mehr lesen
             TIME: Uhr
+        CONTACT:
+            FORM: Kontaktformular

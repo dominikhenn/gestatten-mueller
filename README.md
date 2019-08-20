@@ -8,3 +8,5 @@
 - [ ] Content
 - [ ] Remove jQuery
 - [ ] Event item date
+- [ ] Favicon
+- [ ] Language

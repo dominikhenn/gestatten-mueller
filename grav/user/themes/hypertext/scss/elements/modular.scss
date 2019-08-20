@@ -28,8 +28,11 @@
   }
 
   &--events {
+    padding-top: 24px;
+
     .child-separator__content {
       background: $secondary-color;
+      color: $tertiary-color;
     }
 
     .snippet--event {
@@ -47,6 +50,43 @@
 
     .snippet__info-content {
       color: $gray-color;
+    }
+  }
+
+  &--contact {
+    padding-top: 24px;
+
+    .contact-text {
+      a {
+        color: $tertiary-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .call-to-action {
+      margin-top: 32px;
+    }
+
+    @include tablet-up {
+      .contact-content {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .contact-text {
+        flex-basis: 50%;
+      }
+
+      .call-to-action {
+        flex-basis: 50%;
+
+        .btn {
+          max-width: 400px;
+        }
+      }
     }
   }
 }
