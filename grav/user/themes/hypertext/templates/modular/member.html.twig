@@ -1,0 +1,15 @@
+<div class="modular-wrapper modular-wrapper--member">
+    <div class="introduction introduction--member">
+        <section class="container container--no-padding">
+            <div class="introduction__image">
+                <div class="introduction__gradient introduction__gradient--left"></div>
+                {% if page.media.images|first %}
+                    {{ page.media.images|first.html('', page.header.membername|e('html'), 'introduction__image-bg') }}
+                {% endif %}
+                <div class="introduction__image-member">{{ page.header.membername }}</div>
+                <div class="introduction__gradient introduction__gradient--right"></div>
+            </div>
+        </section>
+    </div>
+    {% include 'partials/page/double-separator.html.twig' with {direction: page.header.direction, color: page.header.color} %}
+</div>

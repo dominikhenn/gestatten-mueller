@@ -20,19 +20,39 @@
     &-mm {
       width: 60vw;
       position: absolute;
-      bottom: 100px;
+      bottom: 150px;
       right: 50px;
       max-width: 250px;
 
       @media (min-width: $bp-tablet) {
-        bottom: 125px;
         max-width: 300px;
+      }
+
+      @media (min-width: $bp-desktop) {
+        right: 100px;
+        max-width: 350px;
+      }
+    }
+
+    &-member {
+      position: absolute;
+      bottom: 100px;
+      right: 50px;
+      font-family: 'Mr Dafoe', cursive;
+      font-size: 45px;
+      color: $tertiary-color;
+      max-width: 80vw;
+      text-align: right;
+      text-shadow: 1px 1px 7px $secondary-color;
+
+      @media (min-width: $bp-tablet) {
+        bottom: 125px;
+        font-size: 56px;;
       }
 
       @media (min-width: $bp-desktop) {
         bottom: 150px;
         right: 100px;
-        max-width: 350px;
       }
     }
   }
@@ -43,6 +63,21 @@
     .introduction__image {
       &-bg {
         height: 300px;
+      }
+    }
+  }
+
+  &--member {
+    height: 500px;
+    margin-top: -25px;
+
+    @media (min-width: $bp-tablet) {
+      margin-top: -50px;
+    }
+
+    .introduction__image {
+      &-bg {
+        height: 500px;
       }
     }
   }

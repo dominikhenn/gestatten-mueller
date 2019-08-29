@@ -1,0 +1,30 @@
+title: Member
+'@extends': default
+
+form:
+    fields:
+        tabs:
+            type: tabs
+            active: 1
+            fields:
+                member:
+                    type: tab
+                    title: Member
+                    fields:
+                        header.membername:
+                            type: text
+                            label: Member name
+                        header.color:
+                            type: select
+                            label: Color
+                            classes: fancy
+                            options:
+                                tertiary: Tertiary
+                                secondary: Secondary
+                        header.direction:
+                            type: select
+                            label: Direction
+                            classes: fancy
+                            options:
+                                left: Left
+                                right: Right

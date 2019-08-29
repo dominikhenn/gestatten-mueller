@@ -79,7 +79,7 @@
 
 {% if not page.home() %}
     <section class="container">
-        <h2>
+        <h2 class="base-headline base-headline--{{ page.template }}">
             <a href="{{ page.url }}">{{ page.title }}</a>
         </h2>
         {% if page.header.subtitle %}<strong>{{ page.header.subtitle }}</strong>{% endif %}

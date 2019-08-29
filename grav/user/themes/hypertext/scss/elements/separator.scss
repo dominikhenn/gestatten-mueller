@@ -1,6 +1,6 @@
 @import '../variables';
 
-.separator{
+.separator {
   position: relative;
   margin-top: -49px;
 
@@ -15,6 +15,46 @@
 
     @include tablet-up {
       height: 100px;
+    }
+  }
+
+  path.top {
+    fill: transparent;
+  }
+
+  path.bottom {
+    fill: $primary-color;
+  }
+
+  &--secondary {
+    path.bottom {
+      fill: $secondary-color;
+    }
+  }
+
+  &--tertiary {
+    path.bottom {
+      fill: $tertiary-color
+    }
+  }
+}
+
+.double-separator {
+  position: relative;
+  margin-top: -24px;
+  z-index: 2;
+
+  @include tablet-up {
+    margin-top: -50px;
+  }
+
+  svg {
+    display: block;
+    height: 25px;
+    width: 100%;
+
+    @include tablet-up {
+      height: 50px;
     }
   }
 

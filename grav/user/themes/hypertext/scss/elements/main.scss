@@ -8,6 +8,18 @@ main,
 
   &--modular {
     background: inherit;
+
+    .base-headline--modular {
+      display: none;
+    }
+
+    .modular-wrapper--member:first-of-type .introduction--member {
+      margin-top: 46px;
+
+      @media (min-width: $bp-tablet) {
+        margin-top: 70px;
+      }
+    }
   }
 
   @include tablet-up {
