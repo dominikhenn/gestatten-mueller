@@ -17,7 +17,7 @@ jQuery(document).ready(function($){
         $(document).scroll(function() {
             scrollHeader();
         });
-    };
+    }
 
     // Touch scroll
     $(document).on({
