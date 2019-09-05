@@ -3,10 +3,12 @@
 ## TODO:
 
 - [ ] JsonLd
+- [ ] SEO
 - [ ] Remove unneeded CSS
-- [ ] Modular
+- [x] Modular
 - [ ] Content
 - [ ] Remove jQuery
-- [ ] Event item date
+- [x] Event item date
 - [ ] Favicon
 - [ ] Language
+- [ ] Social media

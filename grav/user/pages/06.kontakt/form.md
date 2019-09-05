@@ -1,47 +1,36 @@
 ---
 title: Kontakt
 form:
-    name: contact-form
+    name: contact
     fields:
-        -
-            name: name
-            label: Name
-            placeholder: Name
-            autofocus: 'on'
-            autocomplete: 'on'
-            type: text
-            validate:
-                required: true
-        -
-            name: email
-            label: Email
-            placeholder: 'Email Adresse'
-            type: email
-            validate:
-                required: true
+        email:
+          label: Email
+          placeholder: Geben Sie Ihre E-Mail Adresse ein
+          type: email
+          validate:
+            required: true
+        message:
+          label: Nachricht
+          placeholder: Ihre Nachricht an uns
+          type: textarea
+          validate:
+            required: true
     buttons:
-        -
-            type: submit
-            value: Submit
+        submit:
+          type: submit
+          value: Senden
     process:
-        -
-            email:
-                from: '{{ config.plugins.email.from }}'
-                to:
-                    - '{{ config.plugins.email.to }}'
-                    - '{{ form.value.email }}'
-                subject: '[Anfrage] {{ form.value.name|e }}'
-                body: '{% include ''forms/data.html.twig'' %}'
-        -
-            save:
-                fileprefix: feedback-
-                dateformat: Ymd-His-u
-                extension: txt
-                body: '{% include ''forms/data.txt.twig'' %}'
-        -
-            message: 'Danke für Ihre Anfrage!'
-        -
-            display: Dankeschön!
+        captcha: true
+        save:
+            fileprefix: contact-
+            dateformat: Ymd-His-u
+            extension: txt
+            body: "{% include 'forms/data.txt.twig' %}"
+        email:
+            subject: "[Site Contact Form] {{ form.value.email|e }}"
+            body: "{% include 'forms/data.html.twig' %}"
+        message: Danke für Ihre Anfrage!
+        display: thankyou
 ---
 
 Bitte hinterlassen Sie hier Ihre Anfrage...
