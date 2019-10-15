@@ -84,8 +84,12 @@
 
   &__gradient {
     height: 100%;
-    width: 100px;
+    width: 50px;
     position: absolute;
+
+    @media (min-width: $bp-tablet) {
+      width: 100px;
+    }
 
     &--left {
       background: linear-gradient(to right, $secondary-color, rgba(0, 0, 0, 0));

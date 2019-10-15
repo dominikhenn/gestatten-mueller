@@ -20,14 +20,14 @@ form:
           type: submit
           value: Senden
     process:
-        captcha: true
+        captcha: false
         save:
             fileprefix: contact-
             dateformat: Ymd-His-u
             extension: txt
             body: "{% include 'forms/data.txt.twig' %}"
         email:
-            subject: "[Site Contact Form] {{ form.value.email|e }}"
+            subject: "[Mueller Kontaktformular] {{ form.value.email|e }}"
             body: "{% include 'forms/data.html.twig' %}"
         message: Danke für Ihre Anfrage!
         display: thankyou

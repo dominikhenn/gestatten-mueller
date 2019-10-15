@@ -4,10 +4,10 @@
 
 - [ ] JsonLd
 - [ ] SEO
-- [ ] Remove unneeded CSS
+- [x] Remove unneeded CSS
 - [x] Modular
 - [ ] Content
-- [ ] Remove jQuery
+- [x] Remove jQuery
 - [x] Event item date
 - [ ] Favicon
 - [ ] Language
