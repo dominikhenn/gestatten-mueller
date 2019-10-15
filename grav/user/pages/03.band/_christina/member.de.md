@@ -1,10 +1,10 @@
 ---
-title: Band
-media_order: michel1440.jpg
+title: Christina
+media_order: christina.jpg
 allowCSS: default
 allowJS: default
 show_header_image: false
-membername: 'Die Band'
+membername: 'Christina Heidel,<br>Gesang'
 color: secondary
 direction: left
 ---

@@ -9,12 +9,12 @@ a.btn {
   font-weight: bold;
   color: $secondary-color;
   width: calc(100% - 48px);
-  border: 1px solid;
-  border-color: $primary-color;
+  border: 1px solid $primary-color;
   border-radius: 8px;
   transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, color 0.15s ease-in-out;
   text-align: center;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $primary-color;
@@ -23,5 +23,42 @@ a.btn {
 
   @include tablet-up {
     max-width: 300px;
+  }
+}
+
+form {
+  margin-bottom: 50px;
+
+  .form-field {
+    margin-bottom: 16px;
+
+    .form-label {
+      margin-bottom: 5px;
+    }
+
+    .form-input-wrapper input {
+      padding: 8px 24px;
+      border: 1px solid $primary-color;
+      border-radius: 8px;
+      width: calc(100% - 48px);
+      font-size: 14px;
+
+      @include tablet-up {
+        max-width: 300px;
+      }
+    }
+
+    .form-textarea-wrapper textarea {
+      padding: 8px 24px;
+      border: 1px solid $primary-color;
+      border-radius: 8px;
+      width: calc(100% - 48px);
+      font-size: 14px;
+      min-height: 100px;
+
+      @include tablet-up {
+        max-width: 300px;
+      }
+    }
   }
 }

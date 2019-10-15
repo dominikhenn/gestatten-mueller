@@ -9,6 +9,6 @@
 - [ ] Content
 - [x] Remove jQuery
 - [x] Event item date
-- [ ] Favicon
-- [ ] Language
+- [x] Favicon
+- [x] Language
 - [ ] Social media

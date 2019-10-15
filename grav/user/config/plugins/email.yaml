@@ -1,0 +1,20 @@
+enabled: true
+from: noreply@mueller-rockt.de
+from_name: 'Michael Müller'
+to: booking@mueller-rockt.de
+to_name: 'Booking - Michael Müller'
+queue:
+  enabled: false
+  flush_frequency: '* * * * *'
+  flush_msg_limit: 10
+  flush_time_limit: 100
+mailer:
+  engine: smtp
+  smtp:
+    server: mailhog
+    port: 1025
+    encryption: none
+  sendmail:
+    bin: '/usr/sbin/sendmail -bs'
+content_type: text/html
+debug: false

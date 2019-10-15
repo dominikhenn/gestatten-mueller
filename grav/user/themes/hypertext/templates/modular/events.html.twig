@@ -1,6 +1,6 @@
 <div class="modular-wrapper modular-wrapper--events">
     <section class="container">
-        <h2>Events</h2>
+        <h2>{{ page.title }}</h2>
         {% set collection = page.find('/termine').collection()|length > 0 ? page.find('/termine').collection().slice(0, 5) : [] %}
 
         {% if collection|length > 0 %}

@@ -6,9 +6,12 @@ content:
         by: default
         dir: asc
         custom:
-            - _band
             - _kompi
             - _dominik
+            - _christina
+            - _timm
+            - _viktor
+            - _noel
 allowCSS: default
 allowJS: default
 show_header_image: false

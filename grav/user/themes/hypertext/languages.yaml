@@ -16,6 +16,7 @@ en:
             TIME: h
         CONTACT:
             FORM: Contact form
+            EMAIL: Send email
 de:
     THEME_HYPERTEXT:
         PAGINATION:
@@ -34,3 +35,4 @@ de:
             TIME: Uhr
         CONTACT:
             FORM: Kontaktformular
+            EMAIL: E-Mail schreiben

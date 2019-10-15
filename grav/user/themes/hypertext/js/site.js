@@ -1,5 +1,9 @@
 var isTouch = window.DocumentTouch && document instanceof DocumentTouch;
 
+function generateMailToLink() {
+  window.location.href = 'mailto:booking' + '@' + 'mueller-rockt.de';
+}
+
 function scrollHeader() {
   // Has scrolled class on header
   if (window.scrollY > 65) {

@@ -1,9 +1,9 @@
 <div class="modular-wrapper modular-wrapper--contact">
     <section class="container">
-        <h2>Contact</h2>
+        <h2>{{ page.title }}</h2>
         <div class="contact-content">
-            <div class="contact-text">
-                {{ page.content|raw }}
+            <div class="call-to-action">
+                <a class="btn btn-primary" target="_blank" href="javascript:generateMailToLink()">{{ 'THEME_HYPERTEXT.CONTACT.EMAIL'|t }}</a>
             </div>
             <div class="call-to-action">
                 <a class="btn btn-primary" href="{{ page.find('/kontakt').url() }}">{{ 'THEME_HYPERTEXT.CONTACT.FORM'|t }}</a>

@@ -19,8 +19,8 @@ form:
         submit:
           type: submit
           value: Senden
+          classes: 'btn'
     process:
-        captcha: false
         save:
             fileprefix: contact-
             dateformat: Ymd-His-u

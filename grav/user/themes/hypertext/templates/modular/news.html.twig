@@ -4,7 +4,7 @@
         {% set collection = page.find('/news').collection()|length > 0 ? page.find('/news').collection().slice(0, 2) : [] %}
 
         {% for child in collection %}
-            {% include 'partials/item/summary.html.twig' with {'show_date': true, 'page':child, parent:page} %}
+            {% include 'partials/item/summary.html.twig' with {'html5': true, 'show_date': true, 'page':child, parent:page} %}
         {% endfor %}
     </section>
     {% include 'partials/page/separator.html.twig' with {direction: 'right', color: 'secondary'} %}

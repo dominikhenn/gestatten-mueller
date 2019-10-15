@@ -68,7 +68,7 @@
   }
 
   &--member {
-    height: 500px;
+    height: 400px;
     margin-top: -25px;
 
     @media (min-width: $bp-tablet) {
@@ -77,7 +77,7 @@
 
     .introduction__image {
       &-bg {
-        height: 500px;
+        height: 400px;
       }
     }
   }
