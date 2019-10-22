@@ -1,5 +1,39 @@
 {% include 'partials/page/separator.html.twig' with {direction: 'right', color: 'secondary'} %}
-<div class="footer__content-wrapper">
+<div class="footer__content-wrapper container">
+    <div class="footer__logo">
+        <a href="{{ home_url }}">{{ media['theme://images/logo-2908.png'].html('', site.title|e('html')) }}</a>
+        <p>&copy; {{ "now"|date('Y') }}, {{ 'THEME_HYPERTEXT.FOOTER.BY_LINE'|t }}</p>
+    </div>
+    <div class="footer__booking">
+        <h3>BOOKING</h3>
+        <p>
+            Rolf Steinmetz<br>
+            +49 160 90429484<br>
+            E-Mail: <a href="mailto:booking@mueller-rockt.de">booking@mueller-rockt.de</a>
+        </p>
+    </div>
+    <div class="footer__management">
+        <h3>MANAGEMENT</h3>
+        <p>
+            <a href="{{ 'https://www.artists-acts-music.de' }}">{{ media['theme://images/Logo_aaa_quer.jpg'].html('', site.title|e('html')) }}</a>
+            Artists & Acts Music Publishing GmbH<br>
+            +49 89 1895077 2<br>
+            Münchener Str. 17<br>
+            82024 Taufkirchen<br>
+            E-Mail: <a href="mailto:werner.heizenreder@aaa-music.de">werner.heizenreder@aaa-music.de</a>
+        </p>
+    </div>
+    <p class="footer__menu">
+        <a class="footer-link" href="{{ page.find('/impressum').url() }}">Impressum</a>
+        <br>
+        <a href="https://www.facebook.com/Mueller.rockt.koeln" rel="noopener" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="266.893px" height="266.895px" viewBox="0 0 266.893 266.895" enable-background="new 0 0 266.893 266.895" xml:space="preserve">
+                <title>Müller Facebook Channel</title>
+                <path id="Blue_1_" fill="#3C5A99" d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812  c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225  H248.082z"/>
+                <path id="f" fill="#FFFFFF" d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935  l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585  v99.803H182.409z"/>
+            </svg>
+        </a>
+    </p>
     <div class="back-to-top-wrapper" onclick="scrollToTop()">
         <svg class="svg-inline--fa" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" viewBox="0 -256 1792 1792" id="svg2989" version="1.1" inkscape:version="0.48.3.1 r9886" width="100%" height="100%" sodipodi:docname="double_angle_up_font_awesome.svg">
             <metadata id="metadata2999">
@@ -17,19 +51,6 @@
             </g>
         </svg>
     </div>
-    <p class="footer__facebook">
-        <a href="https://www.facebook.com/Mueller.rockt.koeln" rel="noopener" target="_blank">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="266.893px" height="266.895px" viewBox="0 0 266.893 266.895" enable-background="new 0 0 266.893 266.895" xml:space="preserve">
-                <title>Müller Facebook Channel</title>
-                <path id="Blue_1_" fill="#3C5A99" d="M248.082,262.307c7.854,0,14.223-6.369,14.223-14.225V18.812  c0-7.857-6.368-14.224-14.223-14.224H18.812c-7.857,0-14.224,6.367-14.224,14.224v229.27c0,7.855,6.366,14.225,14.224,14.225  H248.082z"/>
-                <path id="f" fill="#FFFFFF" d="M182.409,262.307v-99.803h33.499l5.016-38.895h-38.515V98.777c0-11.261,3.127-18.935,19.275-18.935  l20.596-0.009V45.045c-3.562-0.474-15.788-1.533-30.012-1.533c-29.695,0-50.025,18.126-50.025,51.413v28.684h-33.585v38.895h33.585  v99.803H182.409z"/>
-            </svg>
-        </a>
-    </p>
-    <p class="footer__menu">
-        <a class="footer-link" href="{{ page.find('/impressum').url() }}">Impressum</a>
-    </p>
-    <p>&copy; {{ "now"|date('Y') }}, {{ 'THEME_HYPERTEXT.FOOTER.BY_LINE'|t }}</p>
 </div>
 
 {% block bottom %}

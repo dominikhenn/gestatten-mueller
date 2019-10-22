@@ -1,16 +1,18 @@
 ---
-title: Termine
+title: News
+published: false
 allowCSS: default
 allowJS: default
 content:
     items:
         - '@self.children'
-    dateRange:
-        start: today
-        field: header.event_date
+    limit: 10
     order:
+        by: date
         dir: desc
     sibling_links: false
+    pagination: true
+    url_taxonomy_filters: true
 show_header_image: false
 render:
     children:
@@ -18,8 +20,8 @@ render:
         image: false
         subtitle: true
         category: true
-        date: false
+        date: true
         nested_children: true
 ---
 
-Michael Müller ist demnächst hier zu sehen.
+Die neuesten Infos rund um Michael Müller

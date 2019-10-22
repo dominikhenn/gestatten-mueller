@@ -3,21 +3,41 @@
 footer,
 .footer {
   color: $tertiary-color;
-  text-align: center;
+  text-align: left;
+  font-size: 14px;
+  line-height: 20px;
+
+  h2 {
+    color: $tertiary-color;
+  }
 
   &__content-wrapper {
     height: 200px;
   }
 
-  &__facebook {
+  &__menu {
+    a {
+      color: $tertiary-color;
+    }
+
     svg {
       height: 30px;
     }
   }
 
-  &__menu {
-    a {
-      color: $tertiary-color;
+  &__logo {
+    img {
+      width: 150px;
+    }
+  }
+
+  &__booking {
+
+  }
+
+  &__management {
+    img {
+      width: 150px;
     }
   }
 

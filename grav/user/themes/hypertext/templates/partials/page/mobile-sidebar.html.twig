@@ -13,7 +13,27 @@
             <div class="sidebar__content-menu">
                 <div class="sidebar__content-menu-title">Menu</div>
                 <ul class="sidebar__content-links"}>
-                    {{ macros.nav_loop(pages) }}
+{#                    {{ macros.nav_loop(pages) }}#}
+                    <li>
+                        <a href="/">
+                            Startseite
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:scrollToElement('modular-welcome')">
+                            Michael Müller
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:scrollToElement('modular-events')">
+                            Termine
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/band" class="">
+                            Die Band
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

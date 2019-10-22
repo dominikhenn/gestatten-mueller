@@ -14,7 +14,12 @@
       width: 100%;
       height: calc(100vh + 20px);
       object-fit: cover;
+      object-position: 22%;
       font-family: 'object-fit: cover'; // For object-fit-images polyfill
+
+      @media (min-width: $bp-tablet) {
+        object-position: center;
+      }
     }
 
     &-mm {
@@ -22,15 +27,15 @@
       position: absolute;
       bottom: 150px;
       right: 50px;
-      max-width: 250px;
+      max-width: 150px;
 
       @media (min-width: $bp-tablet) {
-        max-width: 300px;
+        max-width: 200px;
       }
 
       @media (min-width: $bp-desktop) {
         right: 100px;
-        max-width: 350px;
+        max-width: 250px;
       }
     }
 

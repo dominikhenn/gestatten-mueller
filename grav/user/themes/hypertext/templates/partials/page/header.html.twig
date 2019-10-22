@@ -6,7 +6,29 @@
         <section class="navbar-section desktop-menu">
             <nav class="dropmenu animated">
                 {% block header_navigation %}
-                    {% include 'partials/page/navigation.html.twig' %}
+{#                    {% include 'partials/page/navigation.html.twig' %}#}
+                    <ul>
+                        <li>
+                            <a href="/">
+                                Startseite
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:scrollToElement('modular-welcome')">
+                                Michael Müller
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:scrollToElement('modular-events')">
+                                Termine
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/band" class="">
+                                Die Band
+                            </a>
+                        </li>
+                    </ul>
                 {% endblock %}
             </nav>
         </section>

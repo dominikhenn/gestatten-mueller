@@ -12,3 +12,6 @@
 - [x] Favicon
 - [x] Language
 - [ ] Social media
+- [ ] Sitemap.xml
+- [ ] Emails at hoster
+- [ ] Apache redirect http -> https

@@ -17,9 +17,24 @@ function toggleMobileMenu() {
   document.getElementsByClassName('sidebar')[0].classList.toggle('sidebar--active');
 }
 
+function closeMobileMenu() {
+  document.getElementsByClassName('sidebar')[0].classList.remove('sidebar--active');
+}
+
 function scrollToTop() {
   window.scroll({top: 0, left: 0, behavior: 'smooth'});
   return false;
+}
+
+function scrollToElement(elementId) {
+  var element = document.getElementById(elementId);
+
+  if (!element) {
+    window.location.href = '/#' + elementId;
+  } else {
+    closeMobileMenu();
+    window.scroll({top: (element.offsetTop - 60), left: 0, behavior: 'smooth'});
+  }
 }
 
 function ready(fn) {
