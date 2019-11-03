@@ -9,8 +9,7 @@ content:
             - _hero
             - _welcome
             - _events
-            - _news
-            - _contact
+            - _tracks
 body_classes: 'title-center title-h1h2'
 allowCSS: default
 allowJS: default

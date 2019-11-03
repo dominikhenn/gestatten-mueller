@@ -37,6 +37,11 @@ function scrollToElement(elementId) {
   }
 }
 
+function playAudioTrack(key) {
+  document.getElementById('snippet-track-container-' + key).style.display = 'block';
+  document.getElementById('snippet-track-' + key).play();
+}
+
 function ready(fn) {
   if (document.readyState !== 'loading'){
     fn();

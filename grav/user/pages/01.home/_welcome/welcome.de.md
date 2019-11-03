@@ -42,11 +42,3 @@ MÜLLER steht für handgemachte Musik in frischem Gewand, die dazu  beitragen m
 Für Musik, die uns ausgelassen feiern lässt, aber auch für Musik, die uns ruhig in unser Inneres horchen lässt und mit einfachen Worten große Geschichten erzählt.
 
 MÜLLER & Band werden  die kölsche Musikszene maßgeblich bereichern.
-
-<ul>
-    <li>„Bad Kölle“ – ein Partysong mit einem ironischen Augenzwinkern auf seine geliebte Stadt.</li>
-    <li>„Steck’ Dir ding Sorje aan d’r Hot“ – eine Einladung zum Feiern ohne dabei den Bezug zur Realität zu verlieren.</li>
-    <li>„He jebore“ – erzählt von der Heimatverbundenheit und von der  Sehnsucht immer wieder in seine Stadt zurückzukehren.</li>
-    <li>„Dat met uns 2“ – die Geschichte von der Liebe seines Lebens.</li>
-    <li>„Kein Chance“ – die ergreifende Phil Collins Ballade in einer grandios vorgetragenen kölschen Fassung.</li>
-</ul>
