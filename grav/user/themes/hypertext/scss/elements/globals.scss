@@ -6,8 +6,8 @@
 
 body {
   margin: 0;
-  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 16px;
   text-rendering: optimizeLegibility;
   background: $secondary-color;
   color: $text-color;
@@ -25,7 +25,7 @@ ul, ol {
 }
 
 p {
-  font-size: 20px;
+  font-size: 22px;
   line-height: 28px;
 
   .text-image-left {
@@ -69,7 +69,8 @@ h2 {
 
 h3 {
   color: $primary-color;
-  font-size: 20px;
+  font-size: 24px;
+  font-weight: bold;
 
   a, a:visited, a:active {
     text-decoration: none;
@@ -107,10 +108,10 @@ img {
 }
 
 blockquote {
-  margin: 30px 15px;
+  margin: 30px 25px;
   font-size: 24px;
   line-height: 28px;
-  font-weight: lighter;
+  font-weight: bold;
   color: $text-light-color;
   text-align: justify;
 
@@ -118,5 +119,6 @@ blockquote {
     margin: 50px 70px;
     font-size: 30px;
     line-height: 36px;
+    font-weight: lighter;
   }
 }

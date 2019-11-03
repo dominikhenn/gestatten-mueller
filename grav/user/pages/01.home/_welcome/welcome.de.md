@@ -16,7 +16,7 @@ Michael erlernte verschiedene Instrumente, unter anderem Gitarre, die er dann zu
 
 <hr />
 
-![](intro1.jpg?classes=text-image-left)
+![](intro1.png?classes=text-image-left)
 
 Seit 1987 war er regelmäßig als Gitarrist und Background - Sänger mit verschiedenen Bands unterwegs. Als einmal ein Leadsänger einer dieser Bands ausfiel und Michael die Position des Frontmanns übernehmen musste, wurde ihm schnell klar, dass das Singen seine eigentliche Bestimmung war.  
 
@@ -25,7 +25,7 @@ Obwohl der gelernte Gas- und Wasserinstallateur beruflich eine  Laufbahn im öff
 <div style="clear: both"></div>
 <hr />
 
-![](intro2.jpg?classes=text-image-right)
+![](intro2.png?classes=text-image-right)
 
 Bei einem Auftritt im WDR - Sendesaal im November 2018 wurden die Musikproduzenten Thomas Brück (Trude Herr, HÖHNER, u.v.m.) und Johan Daansen (Boney M., Peter Maffay, Scorpions u.v.m.) auf MÜLLER’s  außergewöhnlich ausdrucksstarke Stimme aufmerksam. Bald kam es dann zu Gesprächen in denen schnell klar wurde, dass man zusammenarbeiten will. Schon im Januar 2019  ging man zusammen ins Studio und begann mit der Produktion eines Albums. 
 
