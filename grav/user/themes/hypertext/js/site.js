@@ -42,6 +42,31 @@ function playAudioTrack(key) {
   document.getElementById('snippet-track-' + key).play();
 }
 
+function closeOverlay() {
+  document.body.removeChild(document.getElementsByClassName('overlay--open')[0]);
+}
+
+function showSongText(url) {
+  var template = document.getElementById('overlay-template');
+  var overlay = template.cloneNode(true);
+  overlay.id = '';
+  overlay.classList.add('overlay--open');
+
+  var link = document.createElement('a');
+  link.href = url;
+  link.target = '_blank';
+  link.innerHTML = 'View PDF';
+
+  var content = document.createElement('object');
+  content.type = 'application/pdf';
+  content.data = url;
+  content.append(link);
+
+  overlay.getElementsByClassName('overlay-content__wrapper')[0].append(content);
+
+  document.body.appendChild(overlay);
+}
+
 function ready(fn) {
   if (document.readyState !== 'loading'){
     fn();

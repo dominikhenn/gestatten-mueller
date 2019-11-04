@@ -1,0 +1,67 @@
+@import '../variables';
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 100;
+
+  &--open {
+    display: block;
+  }
+
+  &-bg {
+    background-color: #000;
+    opacity: 0.8;
+    height: 100%;
+    z-index: 101;
+  }
+
+  &-content {
+    height: 100%;
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    z-index: 102;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    &__close-btn {
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      border: 1px solid transparent;
+      background: none;
+      cursor: pointer;
+      color: #fff;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__wrapper {
+      color: #fff;
+      width: calc(100% - 60px);
+      max-width: 1024px;
+      margin-top: 40px;
+      height: calc(100% - 60px);
+      position: relative;
+
+      object {
+        background-color: #fff;
+        width: 100%;
+        min-height: 100%;
+      }
+    }
+  }
+}

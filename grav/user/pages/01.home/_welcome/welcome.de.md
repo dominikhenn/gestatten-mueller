@@ -36,8 +36,6 @@ Im Frühjahr 2020 wird MÜLLER’s Debütalbum  erscheinen. Der endgültige Tite
 
 <blockquote>„Ich möchte mit hochwertiger Musik in kölscher Mundart die Menschen des Rheinlandes und über dessen Grenzen hinaus  dazu einladen, sich in Gesellschaft miteinander auf kölsche Werte und Traditionen wie Gemeinschaftssinn, Heimatverbundenheit und gegenseitigen Respekt zurück zu besinnen, aber in diesem Bewusstsein auch moderne Werte wie kulturelle Vielfalt und Weltoffenheit zu zelebrieren“, sagt MÜLLER.</blockquote>
 
-<hr />
-
 MÜLLER steht für handgemachte Musik in frischem Gewand, die dazu  beitragen möchte, die kölsche Sprache durch wertige Texte aufrecht zu erhalten und weiterzureichen. Für Musik, stimmgewaltig vorgetragen, und vielfältig wie das Leben. 
 Für Musik, die uns ausgelassen feiern lässt, aber auch für Musik, die uns ruhig in unser Inneres horchen lässt und mit einfachen Worten große Geschichten erzählt.
 

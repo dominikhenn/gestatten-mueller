@@ -17,6 +17,9 @@ en:
         CONTACT:
             FORM: Contact form
             EMAIL: Send email
+        TRACK:
+            PLAY_SONG: Play song
+            SONG_TEXT: Display song lyrics
 de:
     THEME_HYPERTEXT:
         PAGINATION:
@@ -36,3 +39,6 @@ de:
         CONTACT:
             FORM: Kontaktformular
             EMAIL: E-Mail schreiben
+        TRACK:
+            PLAY_SONG: Song abspielen
+            SONG_TEXT: Songtext anzeigen
