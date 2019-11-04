@@ -130,6 +130,11 @@ main,
         .snippet__info-content-audio {
           margin-top: 8px;
           display: none;
+
+          audio {
+            width: 100%;
+            max-width: 350px;
+          }
         }
       }
     }

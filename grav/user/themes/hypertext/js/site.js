@@ -1,7 +1,7 @@
 var isTouch = window.DocumentTouch && document instanceof DocumentTouch;
 
-function generateMailToLink() {
-  window.location.href = 'mailto:booking' + '@' + 'mueller-rockt.de';
+function generateMailToLink(pre, post) {
+  window.location.href = 'mailto:' + pre + '@' + post;
 }
 
 function scrollHeader() {
