@@ -12,6 +12,7 @@ content:
             - _timm
             - _viktor
             - _noel
+            - _catrin
 allowCSS: default
 allowJS: default
 show_header_image: false

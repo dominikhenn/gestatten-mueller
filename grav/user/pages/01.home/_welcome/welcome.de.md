@@ -7,7 +7,7 @@ show_header_image: false
 ---
 
 <div style="text-align: center">
-<h3 class="in-text">Micheal Müller</h3>
+<h3 class="in-text">Michael Müller</h3>
 <b>"HE JEBORE"</b>
 </div>
 
@@ -30,7 +30,7 @@ Obwohl der gelernte Gas- und Wasserinstallateur beruflich eine  Laufbahn im öff
 Bei einem Auftritt im WDR - Sendesaal im November 2018 wurden die Musikproduzenten Thomas Brück (Trude Herr, HÖHNER, u.v.m.) und Johan Daansen (Boney M., Peter Maffay, Scorpions u.v.m.) auf MÜLLER’s  außergewöhnlich ausdrucksstarke Stimme aufmerksam. Bald kam es dann zu Gesprächen in denen schnell klar wurde, dass man zusammenarbeiten will. Schon im Januar 2019  ging man zusammen ins Studio und begann mit der Produktion eines Albums. 
 
 Obwohl noch im Rohzustand, fand das Musiklabel „Artists & Acts“ die Titel so stark, dass es MÜLLER sofort einen Vertrag anbot.
-Im Frühjahr 2020 wird MÜLLER’s Debütalbum  erscheinen. Der endgültige Titel des Albums steht derzeit noch nicht fest, aber es gibt weiter unten vorab schon eine Kostprobe von 5 Songs.
+Im Frühjahr 2020 wird MÜLLER’s Debütalbum  erscheinen. Der endgültige Titel des Albums steht derzeit noch nicht fest, aber es gibt weiter unten vorab schon eine Kostprobe von 4 Songs.
 
 <div style="clear: both"></div>
 
