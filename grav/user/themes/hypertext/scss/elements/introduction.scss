@@ -14,11 +14,11 @@
       width: 100%;
       height: calc(100vh + 20px);
       object-fit: cover;
-      object-position: 22%;
+      object-position: 38% 16%;
       font-family: 'object-fit: cover'; // For object-fit-images polyfill
 
       @media (min-width: $bp-tablet) {
-        object-position: center;
+        object-position: center 16%;
       }
     }
 
