@@ -7,36 +7,28 @@ show_header_image: false
 ---
 
 <div style="text-align: center">
-<h3 class="in-text">Michael Müller</h3>
-<b>"HE JEBORE"</b>
+<h3 class="in-text">"HE JEBORE"</h3>
 </div>
 
-Michael Müller wurde 1971 in Siegburg geboren. Schon im Alter von 12 Jahren stand er auf den Bühnen des Karnevals und imitierte mit seinem Kumpel das damals sehr erfolgreiche COLONIA DUETT. So kam er  schon sehr früh mit der "Kölschen Sproch" in Berührung.
-Michael erlernte verschiedene Instrumente, unter anderem Gitarre, die er dann zunächst zu seinem Hauptinstrument machte. 
+MÜLLER, geboren 1971 mit dem Vornamen Michael, ist DIE neue Rockstimme Kölns. Schon im Alter von 12 Jahren stand er auf den Bühnen des Karnevals, imitierte mit einem Kumpel das Colonia Duett und kam so schon früh mit der Musikalität der "Kölschen Sproch" in Berührung. Er lernte aber, wie es sich gehört, erst etwas Solides – nämlich Gas- und Wasserinstallateur – und schlug eine Laufbahn im öffentlichen Dienst ein. Heute ist er von Beruf Feuerwehrmann.
 
 <hr />
 
-![](intro1.png?classes=text-image-left)
+![](intro1.jpg?classes=text-image-left)
 
-Seit 1987 war er regelmäßig als Gitarrist und Background - Sänger mit verschiedenen Bands unterwegs. Als einmal ein Leadsänger einer dieser Bands ausfiel und Michael die Position des Frontmanns übernehmen musste, wurde ihm schnell klar, dass das Singen seine eigentliche Bestimmung war.  
+In seiner Freizeit jedoch blieb die Musik die große Leidenschaft: MÜLLER erlernte mehrere Instrumente und wurde Gitarrist und Background-Sänger in verschiedenen Bands. Als einmal der Frontsänger einer dieser Bands ausfiel und MÜLLER die Position übernehmen musste, wurden die Weichen für eine Solokarriere gestellt. 
 
-Obwohl der gelernte Gas- und Wasserinstallateur beruflich eine  Laufbahn im öffentlichen Dienst einschlug – er ist bis heute bei der Feuerwehr tätig - blieb die Musik immer ein zentrales Thema in seinem Leben und er hat nie den Traum einer Künstlerkarriere aufgegeben. Er trat weiterhin mit den verschiedensten Kollegen bei jeder sich bietenden Gelegenheit live auf.
+Bei einem Auftritt im WDR-Sendesaal 2018 wurden die Musikproduzenten Thomas Brück (Trude Herr, HÖHNER, u.v.m.) und Johan Daansen (Boney M., Peter Maffay, Scorpions u.v.m.) auf die ausdrucksstarke Stimme des 47-Jährigen aufmerksam und nahmen ihn unter Vertrag. 
 
 <div style="clear: both"></div>
 <hr />
 
-![](intro2.png?classes=text-image-right)
+![](intro2.jpg?classes=text-image-right)
 
-Bei einem Auftritt im WDR - Sendesaal im November 2018 wurden die Musikproduzenten Thomas Brück (Trude Herr, HÖHNER, u.v.m.) und Johan Daansen (Boney M., Peter Maffay, Scorpions u.v.m.) auf MÜLLER’s  außergewöhnlich ausdrucksstarke Stimme aufmerksam. Bald kam es dann zu Gesprächen in denen schnell klar wurde, dass man zusammenarbeiten will. Schon im Januar 2019  ging man zusammen ins Studio und begann mit der Produktion eines Albums. 
-
-Obwohl noch im Rohzustand, fand das Musiklabel „Artists & Acts“ die Titel so stark, dass es MÜLLER sofort einen Vertrag anbot.
-Im Frühjahr 2020 wird MÜLLER’s Debütalbum  erscheinen. Der endgültige Titel des Albums steht derzeit noch nicht fest, aber es gibt weiter unten vorab schon eine Kostprobe von 4 Songs.
+2020 wird das Debütalbum von MÜLLER erscheinen, aber vorab gibt es bereits Kostproben: von Hymnen auf seinen geliebten 'Luffkurort am Rhing' wie "Bad Kölle" über den Partykracher "Steck’ Dir ding Sorje aan d’r Hot" bis zur 'herzerweeschenden' Liebesballade "Dat met uns 2" – MÜLLER steht für kölsche Werte: Für Gemeinschaftssinn, Heimatverbundenheit und Respekt ebenso wie für moderne Werte wie kulturelle Vielfalt und Weltoffenheit.
 
 <div style="clear: both"></div>
 
 <blockquote>„Ich möchte mit hochwertiger Musik in kölscher Mundart die Menschen des Rheinlandes und über dessen Grenzen hinaus  dazu einladen, sich in Gesellschaft miteinander auf kölsche Werte und Traditionen wie Gemeinschaftssinn, Heimatverbundenheit und gegenseitigen Respekt zurück zu besinnen, aber in diesem Bewusstsein auch moderne Werte wie kulturelle Vielfalt und Weltoffenheit zu zelebrieren“, sagt MÜLLER.</blockquote>
 
-MÜLLER steht für handgemachte Musik in frischem Gewand, die dazu  beitragen möchte, die kölsche Sprache durch wertige Texte aufrecht zu erhalten und weiterzureichen. Für Musik, stimmgewaltig vorgetragen, und vielfältig wie das Leben. 
-Für Musik, die uns ausgelassen feiern lässt, aber auch für Musik, die uns ruhig in unser Inneres horchen lässt und mit einfachen Worten große Geschichten erzählt.
-
-MÜLLER & Band werden  die kölsche Musikszene maßgeblich bereichern.
+Ob solo oder mit Band – mit handgemachter Musik und wertigen Texten, mit kölscher Mundart und Stimmgewalt wird MÜLLER die Menschen des Rheinlandes begeistern und die kölsche Musikszene weit über deren Grenze hinaus bereichern.
