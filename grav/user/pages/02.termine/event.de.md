@@ -1,18 +1,17 @@
 ---
 title: Termine
-visible: false
 allowCSS: default
 allowJS: default
 content:
     items:
         - '@self.children'
-    order:
-        by: folder
-        dir: desc
     sibling_links: false
     dateRange:
         start: today
         field: header.event_date
+    order:
+        by: header.event_date
+        dir: asc
 show_header_image: false
 render:
     children:

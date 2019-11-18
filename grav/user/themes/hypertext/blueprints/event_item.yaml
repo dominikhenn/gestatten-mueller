@@ -7,6 +7,7 @@ form:
     fields:
         header.event_date:
             type: datetime
+            format: 'Y-m-d H:i'
             label: PLUGIN_ADMIN.DATE
             toggleable: false
             help: PLUGIN_ADMIN.DATE_HELP

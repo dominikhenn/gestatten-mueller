@@ -3,9 +3,11 @@
 .separator {
   position: relative;
   margin-top: -49px;
+  height: 49px;
 
   @include tablet-up {
     margin-top: -100px;
+    height: 100px;
   }
 
   svg {
