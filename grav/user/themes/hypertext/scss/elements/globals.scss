@@ -51,18 +51,20 @@ h1,h2,h3,h4,h5,h6 {
 
 h1,
 h2 {
-  font-family: 'Mr Dafoe', cursive;
-  font-size: 45px;
-  color: $secondary-color;
-  margin-left: 20px;
+  font-family: 'Archivo Black', sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  color: $primary-color;
   margin-bottom: 16px;
+  letter-spacing: -2px;
+  text-transform: uppercase;
 
   @include tablet-up {
-    font-size: 56px;
+    font-size: 40px;
   }
 
   a, a:visited, a:active {
-    color: $secondary-color;
+    color: $primary-color;
     text-decoration: none;
   }
 }
@@ -110,14 +112,11 @@ blockquote {
   margin: 30px 25px;
   font-size: 24px;
   line-height: 28px;
-  font-weight: bold;
+  font-style: italic;
   color: $text-light-color;
   text-align: justify;
 
   @include tablet-up {
     margin: 50px 70px;
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: lighter;
   }
 }
