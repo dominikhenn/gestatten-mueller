@@ -9,7 +9,7 @@
 {% endif %}
 
     <div class="snippet__date-circle">
-      <div class="snippet__date-circle-month">{{ page.header.event_date|date("M") }}</div>
+      <div class="snippet__date-circle-month">{{ 'MONTHS_OF_THE_YEAR'|ta(page.header.event_date|date('n') - 1) }}</div>
       <div class="snippet__date-circle-day">{{ page.header.event_date|date("d") }}</div>
     </div>
     <div class="snippet__info">

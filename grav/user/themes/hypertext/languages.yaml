@@ -20,6 +20,7 @@ en:
         TRACK:
             PLAY_SONG: Play song
             SONG_TEXT: Display song lyrics
+    MONTHS_OF_THE_YEAR: [Jan, Feb, Mar, Apr, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
 de:
     THEME_HYPERTEXT:
         PAGINATION:
@@ -42,3 +43,4 @@ de:
         TRACK:
             PLAY_SONG: Song abspielen
             SONG_TEXT: Songtext anzeigen
+    MONTHS_OF_THE_YEAR: [Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez]
