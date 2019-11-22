@@ -8,6 +8,7 @@ taxonomies:
   - tag
 metadata:
   description: 'Michael Müller und seine fantastische Liveband'
+  Keywords: 'Michael Müller, Michael Kompauer, Dominik Henn, Timm Jakovatz, Noel Stevens, Christina Heidel, Viktor Zhuravskyi, Catrin Caspari'
 summary:
   enabled: true
   format: short

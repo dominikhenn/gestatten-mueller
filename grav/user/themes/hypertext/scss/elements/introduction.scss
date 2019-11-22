@@ -43,22 +43,23 @@
 
     &-member {
       position: absolute;
-      bottom: 100px;
+      bottom: 60px;
       right: 50px;
-      font-family: 'Mr Dafoe', cursive;
-      font-size: 45px;
-      color: $tertiary-color;
+      font-family: 'Stadt', 'Archivo Black', sans-serif;
+      font-size: 30px;
+      letter-spacing: 1px;
+      color: $primary-color;
       max-width: 80vw;
       text-align: right;
-      text-shadow: 1px 1px 7px $secondary-color;
+      text-shadow: 1px 1px 2px $tertiary-color;
 
       @media (min-width: $bp-tablet) {
-        bottom: 125px;
-        font-size: 56px;;
+        bottom: 80px;
+        font-size: 40px;;
       }
 
       @media (min-width: $bp-desktop) {
-        bottom: 150px;
+        bottom: 100px;
         right: 100px;
       }
     }
@@ -85,6 +86,13 @@
     .introduction__image {
       &-bg {
         height: 400px;
+        object-position: unset;
+
+        @media (min-width: $bp-tablet) {
+          object-fit: cover;
+
+          font-family: 'object-fit: cover'; // For object-fit-images polyfill
+        }
       }
     }
   }
