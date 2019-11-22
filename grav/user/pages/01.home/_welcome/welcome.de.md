@@ -32,4 +32,4 @@ Bei einem Auftritt im WDR-Sendesaal 2018 wurden die Musikproduzenten Thomas Brü
 
 <div style="clear: both"></div>
 
-Ob solo oder mit Band – mit handgemachter Musik und wertigen Texten, mit kölscher Mundart und Stimmgewalt wird MÜLLER die Menschen des Rheinlandes begeistern und die kölsche Musikszene weit über deren Grenze hinaus bereichern.
+Ob Solo oder mit Band – mit handgemachter Musik und wertigen Texten, mit kölscher Mundart und Stimmgewalt wird MÜLLER die Menschen des Rheinlandes begeistern und die kölsche Musikszene weit über deren Grenze hinaus bereichern.
