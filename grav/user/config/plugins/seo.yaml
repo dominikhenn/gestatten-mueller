@@ -4,7 +4,7 @@ restaurant: false
 event: false
 organization: true
 musicevent: true
-person: false
+person: true
 twitter_default: '1'
 facebook_default: '1'
 musicalbum: true

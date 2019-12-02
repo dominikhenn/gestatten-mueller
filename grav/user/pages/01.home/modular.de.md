@@ -66,6 +66,41 @@ orga:
         -
             name: 'Michael Kompauer'
 orgaratingenabled: false
+personenabled: true
+addperson:
+    -
+        person_name: 'Michael Müller'
+        person_jobTitle: 'Lead Gesang'
+        person_address_addressLocality: Köln
+    -
+        person_name: 'Michael Kompauer'
+        person_jobTitle: 'Gitarrist und Gesang'
+        person_address_addressLocality: Köln
+    -
+        person_name: 'Dominik Henn'
+        person_jobTitle: 'Lead Gittarist und Gesang'
+        person_address_addressLocality: Köln
+    -
+        person_name: 'Timm Jakovatz'
+        person_jobTitle: 'Bass und Gesang'
+        person_address_addressLocality: Köln
+    -
+        person_name: 'Noel Stevens'
+        person_jobTitle: Keyboard
+        person_address_addressLocality: Köln
+    -
+        person_name: 'Viktor Zhuravskyi'
+        person_jobTitle: 'Schlagzeug / Drums'
+        person_address_addressLocality: Köln
+    -
+        person_name: 'Christina Heidel'
+        person_jobTitle: Gesang
+        person_address_addressLocality: Köln
+    -
+        person_name: 'Catrin Caspari'
+        person_jobTitle: Gesang
+        person_address_addressLocality: Köln
+musicalbumenabled: false
 facebookenable: true
 facebooktitle: 'Michael Müller - DIE neue Rockstimme Kölns'
 facebookdesc: 'Ob Solo oder mit Band – mit handgemachter Musik und wertigen Texten, mit kölscher Mundart und Stimmgewalt wird MÜLLER die Menschen des Rheinlandes begeistern und die kölsche Musikszene weit über deren Grenze hinaus bereichern.'
