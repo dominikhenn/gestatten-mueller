@@ -2,8 +2,8 @@
 
 ## TODO:
 
-- [ ] JsonLd
-- [ ] SEO
+- [x] JsonLd
+- [x] SEO
 - [x] Remove unneeded CSS
 - [x] Modular
 - [x] Content
