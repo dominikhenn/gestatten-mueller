@@ -7,6 +7,7 @@ content:
         dir: asc
         custom:
             - _hero
+            - _merchandise
             - _welcome
             - _events
             - _tracks

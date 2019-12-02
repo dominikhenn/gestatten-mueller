@@ -1,4 +1,4 @@
-# gestatten-mueller
+# Müller rockt
 
 ## TODO:
 
@@ -15,3 +15,5 @@
 - [x] Sitemap.xml
 - [ ] Emails at hoster
 - [x] Apache redirect http -> https
+- [ ] Tracks more dynamic
+- [ ] Merchandise more dynamic
