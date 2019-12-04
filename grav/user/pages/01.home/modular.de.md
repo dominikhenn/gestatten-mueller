@@ -29,8 +29,13 @@ musicevents:
         musicevent_location_address: 'Frankenwerft 35, 50667 Köln'
         musicevent_location_url: 'https://stapelhauskoeln.de/'
         musicevent_name: 'Kölsche Huhadel im Stapelhaus'
+        musicevent_image: /home/_merchandise/cover-bad-koelle.jpg
         musicevent_description: 'Michael Müller und Band zu Gast beim Kölschen Huhadel'
+        musicevent_url: 'http://www.koelschehuhadel.de/index.php/termine/'
         musicevent_offers_availability: 'http://schema.org/PreOrder'
+        musicevent_offers_url: 'http://www.koelschehuhadel.de/index.php/veranstaltungen/'
+        musicevent_offers_validFrom: '01-12-2019 11:11'
+        musicevent_offers_price: '25'
         musicevent_offers_priceCurrency: EUR
         musicevent_performer:
             -
