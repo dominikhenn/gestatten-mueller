@@ -35,6 +35,7 @@ eventenabled: false
 musicalbumenabled: false
 facebookenable: true
 event_date: '2020-01-19 14:30'
+show_time: true
 ---
 
 Dom im Stapelhaus, Frankenwerft 35, 50667 Köln

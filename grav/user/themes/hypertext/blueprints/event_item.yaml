@@ -13,3 +13,7 @@ form:
             help: PLUGIN_ADMIN.DATE_HELP
             validate:
                 required: true
+        header.show_time:
+            type: checkbox
+            label: Show time
+            default: true

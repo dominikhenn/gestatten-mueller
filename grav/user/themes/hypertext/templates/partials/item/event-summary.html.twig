@@ -16,7 +16,11 @@
       <h3 class="snippet__info-headline">{{ page.title }}</h3>
       <a class="hidden" href="{{ page.url }}">{{ page.title }}</a>
         <div class="snippet__info-content">
-            {{ page.header.event_date|date("H:i") }} {{ 'THEME_HYPERTEXT.CHILDREN.TIME'|t }}{% if page.content %}, {{ page.content|striptags }}{% endif %}
+            {% if page.header.show_time is defined and page.header.show_time %}
+                {{ page.header.event_date|date("H:i") }} {{ 'THEME_HYPERTEXT.CHILDREN.TIME'|t }}{% if page.content %}, {{ page.content|striptags }}{% endif %}
+            {% else %}
+                {% if page.content %}{{ page.content|striptags }}{% endif %}
+            {% endif %}
         </div>
     </div>
 
