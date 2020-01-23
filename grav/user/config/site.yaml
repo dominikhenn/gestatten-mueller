@@ -2,13 +2,13 @@ title: 'Müller Rockt Köln'
 default_lang: de
 author:
   name: 'Michael Müller'
-  email: dominik.henn@intradesys.com
+  email: dominik-henn@web.de
 taxonomies:
   - category
   - tag
 metadata:
   description: 'Michael Müller und seine fantastische Liveband'
-  Keywords: 'Michael Müller, Michael Kompauer, Dominik Henn, Timm Jakovatz, Noel Stevens, Christina Heidel, Viktor Zhuravskyi, Catrin Caspari'
+  Keywords: 'Michael Müller, Timm Jakovatz, Christina Heidel, Viktor Zhuravskyi, Catrin Caspari'
 summary:
   enabled: true
   format: short

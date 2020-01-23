@@ -6,12 +6,9 @@ content:
         by: default
         dir: asc
         custom:
-            - _kompi
-            - _dominik
             - _christina
             - _timm
             - _viktor
-            - _noel
             - _catrin
 allowCSS: default
 allowJS: default

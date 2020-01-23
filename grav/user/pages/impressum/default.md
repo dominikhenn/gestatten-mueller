@@ -5,10 +5,7 @@ allowJS: default
 show_header_image: false
 ---
 
-**Müller GbR**  
-Vertreten durch:  
-Michael Müller,  
-Michael Kompauer  
+**Michael Müller**  
 Am Mühlengraben 67  
 53773 Hennef
 

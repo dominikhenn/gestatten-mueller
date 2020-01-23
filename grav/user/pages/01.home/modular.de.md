@@ -68,8 +68,6 @@ orga:
     founders:
         -
             name: 'Michael Müller'
-        -
-            name: 'Michael Kompauer'
 orgaratingenabled: false
 personenabled: true
 addperson:
@@ -78,20 +76,8 @@ addperson:
         person_jobTitle: 'Lead Gesang'
         person_address_addressLocality: Köln
     -
-        person_name: 'Michael Kompauer'
-        person_jobTitle: 'Gitarrist und Gesang'
-        person_address_addressLocality: Köln
-    -
-        person_name: 'Dominik Henn'
-        person_jobTitle: 'Lead Gittarist und Gesang'
-        person_address_addressLocality: Köln
-    -
         person_name: 'Timm Jakovatz'
         person_jobTitle: 'Bass und Gesang'
-        person_address_addressLocality: Köln
-    -
-        person_name: 'Noel Stevens'
-        person_jobTitle: Keyboard
         person_address_addressLocality: Köln
     -
         person_name: 'Viktor Zhuravskyi'
