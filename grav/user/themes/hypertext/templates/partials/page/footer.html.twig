@@ -15,12 +15,19 @@
     <div class="footer__management">
         <h3>MANAGEMENT</h3>
         <p>
-            <a href="{{ 'https://www.artists-acts-music.de' }}">{{ media['theme://images/aaa.jpg'].html('', site.title|e('html')) }}</a>
+            <a target="_blank" href="{{ 'https://www.artists-acts-music.de' }}">{{ media['theme://images/aaa.jpg'].html('', site.title|e('html')) }}</a>
             Artists & Acts Music Publishing GmbH<br>
             +49 89 1895077 2<br>
             Münchener Str. 17<br>
             82024 Taufkirchen<br>
             <a href="javascript:generateMailToLink('werner.heizenreder', 'aaa-music.de')">werner.heizenreder @ aaa-music.de</a>
+        </p>
+    </div>
+    <div class="footer__tour-service">
+        <h3>TOUR SERVICE</h3>
+        <p>
+            <a target="_blank" href="{{ 'https://showtime-bonn.com/' }}">{{ media['theme://images/showtime.png'].html('', site.title|e('html')) }}</a><br>
+            <a href="javascript:generateMailToLink('info', 'showtime-bonn.de')">info @ showtime-bonn.de</a>
         </p>
     </div>
     <div class="footer__menu">
