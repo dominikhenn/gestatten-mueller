@@ -6,8 +6,8 @@ show_header_image: false
 ---
 
 **Michael Müller**  
-Am Mühlengraben 67  
-53773 Hennef
+Zedernweg 146  
+53757 Sankt Augustin
 
 **FOTOS:**  
 Wolf Simon
@@ -60,12 +60,12 @@ Einwilligung ist jede von der betroffenen Person freiwillig für den bestimmten 
 **2. NAME UND ANSCHRIFT DES FÜR DIE VERARBEITUNG VERANTWORTLICHEN**  
 Verantwortlicher im Sinne der Datenschutz-Grundverordnung, sonstiger in den Mitgliedstaaten der Europäischen Union geltenden Datenschutzgesetze und anderer Bestimmungen mit datenschutzrechtlichem Charakter ist die:
 
-Müller GbR  
-Am Mühlengraben 67  
-53773 Hennef  
+Michael Müller  
+Zedernweg 146  
+53757 Sankt Augustin  
 Deutschland  
-Tel.: +47 177 4666198  
-E-Mail: mail@mueller-rockt.de  
+Tel.: +49 177 4666198  
+E-Mail: info@mueller-rockt.de  
 Website: http://mueller-rockt.de
 
 **3. COOKIES**  
