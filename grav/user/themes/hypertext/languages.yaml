@@ -10,7 +10,7 @@ en:
         THUMBNAIL:
             THUMBNAIL: Thumbnail
         FOOTER:
-            BY_LINE: Michael Müller GbR
+            BY_LINE: Michael Müller
         CHILDREN:
             READ_MORE: Read more
             TIME: h
@@ -33,7 +33,7 @@ de:
         THUMBNAIL:
             THUMBNAIL: Thumbnail
         FOOTER:
-            BY_LINE: Michael Müller GbR
+            BY_LINE: Michael Müller
         CHILDREN:
             READ_MORE: Mehr lesen
             TIME: Uhr

@@ -1,5 +1,5 @@
 ---
-title: Neuerscheinungen
+title: Download / Streaming
 published: true
 allowCSS: default
 allowJS: default

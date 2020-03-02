@@ -169,6 +169,14 @@
           }
         }
       }
+
+      @include big-desktop-up {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .merchandise-content__product-links {
+          padding-right: 24px;
+        }
+      }
     }
   }
 }

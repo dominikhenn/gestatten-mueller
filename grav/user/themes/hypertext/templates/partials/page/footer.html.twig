@@ -1,5 +1,5 @@
 {% include 'partials/page/separator.html.twig' with {direction: 'right', color: 'secondary'} %}
-<div class="footer__content-wrapper container">
+<div id="footer-contact" class="footer__content-wrapper container">
     <div class="footer__logo">
         <a href="{{ home_url }}">{{ media['theme://images/logo.png'].html('', site.title|e('html')) }}</a>
         <p>&copy; {{ "now"|date('Y') }}, {{ 'THEME_HYPERTEXT.FOOTER.BY_LINE'|t }}</p>
@@ -17,7 +17,7 @@
         <p>
             <a target="_blank" href="{{ 'https://www.artists-acts-music.de' }}">{{ media['theme://images/aaa.jpg'].html('', site.title|e('html')) }}</a>
             Artists & Acts Music Publishing GmbH<br>
-            +49 89 1895077 2<br>
+            +49 89 1895077 0<br>
             Münchener Str. 17<br>
             82024 Taufkirchen<br>
             <a href="javascript:generateMailToLink('werner.heizenreder', 'aaa-music.de')">werner.heizenreder @ aaa-music.de</a>
