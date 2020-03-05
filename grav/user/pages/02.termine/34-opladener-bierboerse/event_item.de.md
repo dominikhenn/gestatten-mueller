@@ -13,8 +13,8 @@ orgaratingenabled: false
 personenabled: false
 musicalbumenabled: false
 facebookenable: true
-event_date: '2020-08-16 15:00'
-show_time: false
+event_date: '2020-08-16 19:15'
+show_time: '1'
 ---
 
 An der Schusterinsel, Leverkusen
