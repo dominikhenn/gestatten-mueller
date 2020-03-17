@@ -1,12 +1,20 @@
 <div id="modular-tracks" class="modular-wrapper modular-wrapper--tracks">
-    <section class="container">
-        <h2>{{ page.title }}</h2>
+    <section class="container tracks-content">
         <div>
-            {% include 'partials/page/track.html.twig' with {key: '2', track: 'he-jebore.mp3', pdf: 'he-jebore.pdf', title: 'He jebore', text: '„He jebore“ – erzählt von der Heimatverbundenheit und von der  Sehnsucht immer wieder in seine Stadt zurückzukehren.'} %}
-            {% include 'partials/page/track.html.twig' with {key: '1', track: 'sorje.mp3', pdf: 'sorje.pdf', title: 'Steck’ Dir ding Sorje aan d’r Hot', text: '„Steck’ Dir ding Sorje aan d’r Hot“ – eine Einladung zum Feiern ohne dabei den Bezug zur Realität zu verlieren.'} %}
-            {% include 'partials/page/track.html.twig' with {key: '0', track: 'bad-koelle.mp3', pdf: 'bad-koelle.pdf', title: 'Bad Kölle', text: '„Bad Kölle“ – ein Partysong mit einem ironischen Augenzwinkern auf seine geliebte Stadt.'} %}
-            {% include 'partials/page/track.html.twig' with {key: '3', track: 'dmu2.mp3', pdf: 'dmu2.pdf', title: 'Dat met uns 2', text: '„Dat met uns 2“ – die Geschichte von der Liebe seines Lebens.'} %}
-{#            {% include 'partials/page/track.html.twig' with {key: '4', track: 'kein-chance.mp3', pdf: 'kein-chance.pdf', title: 'Kein Chance', text: '„Kein Chance“ – die ergreifende Phil Collins Ballade in einer grandios vorgetragenen kölschen Fassung.'} %}#}
+            <h2>{{ page.title }}</h2>
+            <div>
+                {% include 'partials/page/track.html.twig' with {key: '2', track: 'he-jebore.mp3', pdf: 'he-jebore.pdf', title: 'He jebore', text: '„He jebore“ – erzählt von der Heimatverbundenheit und von der  Sehnsucht immer wieder in seine Stadt zurückzukehren.'} %}
+                {% include 'partials/page/track.html.twig' with {key: '1', track: 'sorje.mp3', pdf: 'sorje.pdf', title: 'Steck’ Dir ding Sorje aan d’r Hot', text: '„Steck’ Dir ding Sorje aan d’r Hot“ – eine Einladung zum Feiern ohne dabei den Bezug zur Realität zu verlieren.'} %}
+                {% include 'partials/page/track.html.twig' with {key: '0', track: 'bad-koelle.mp3', pdf: 'bad-koelle.pdf', title: 'Bad Kölle', text: '„Bad Kölle“ – ein Partysong mit einem ironischen Augenzwinkern auf seine geliebte Stadt.'} %}
+                {% include 'partials/page/track.html.twig' with {key: '3', track: 'dmu2.mp3', pdf: 'dmu2.pdf', title: 'Dat met uns 2', text: '„Dat met uns 2“ – die Geschichte von der Liebe seines Lebens.'} %}
+                {#            {% include 'partials/page/track.html.twig' with {key: '4', track: 'kein-chance.mp3', pdf: 'kein-chance.pdf', title: 'Kein Chance', text: '„Kein Chance“ – die ergreifende Phil Collins Ballade in einer grandios vorgetragenen kölschen Fassung.'} %}#}
+            </div>
+        </div>
+        <div>
+            <h2>Video</h2>
+            <div>
+                {% include 'partials/page/youtube-video.html.twig' with {id: 'Ufx1RXv-Gqg', image: 'wdr-cover.jpg', title: 'WDR Arkaden'} %}
+            </div>
         </div>
     </section>
     {% include 'partials/page/separator.html.twig' with {direction: 'right', color: 'secondary'} %}

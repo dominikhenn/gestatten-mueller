@@ -67,6 +67,18 @@ function showSongText(url) {
   document.body.appendChild(overlay);
 }
 
+function playYoutubeVideo(container, id) {
+  container.onclick = null;
+  container.getElementsByClassName('youtube-video__play')[0].style.display = 'none';
+
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube.com/embed/' + id + '?autoplay=1&rel=0';
+
+  var sourceContainer = container.getElementsByClassName('youtube-video__source')[0];
+  sourceContainer.innerHTML = '';
+  sourceContainer.append(iframe);
+}
+
 function ready(fn) {
   if (document.readyState !== 'loading'){
     fn();

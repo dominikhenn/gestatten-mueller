@@ -179,4 +179,14 @@
       }
     }
   }
+
+  &--tracks {
+    .tracks-content {
+      @include desktop-up {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 16px;
+      }
+    }
+  }
 }
