@@ -13,7 +13,7 @@ orgaratingenabled: false
 personenabled: false
 musicalbumenabled: false
 facebookenable: true
-event_date: '2020-06-14 19:15'
+event_date: '2020-06-12 19:15'
 show_time: '1'
 ---
 
