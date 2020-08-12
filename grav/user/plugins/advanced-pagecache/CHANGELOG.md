@@ -1,3 +1,23 @@
+# v3.0.2
+## 06/21/2020
+
+1. [](#improved)
+    * fix default value for per_user_caching in admin [#18](https://github.com/getgrav/grav-plugin-advanced-pagecache/pull/18)
+
+# v3.0.1
+## 06/21/2020
+
+1. [](#bugfix)
+    * Check for user when login plugin is not installed [#19](https://github.com/getgrav/grav-plugin-advanced-pagecache/issues/19)
+
+# v3.0.0
+## 06/08/2020
+
+1. [](#new)
+    * Allow disabling user on login [#17](https://github.com/getgrav/grav-plugin-advanced-pagecache/issues/17)
+1. [](#improved)
+    * Fixed conflicting and misleading messages [#16](https://github.com/getgrav/grav-plugin-advanced-pagecache/issues/16)
+
 # v2.0.0
 ## 04/27/2019
 
