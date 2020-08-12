@@ -81,17 +81,28 @@
 
     @media (min-width: $bp-tablet) {
       margin-top: -50px;
+      height: 500px;
+    }
+
+    @media (min-width: $bp-desktop) {
+      height: 600px;
     }
 
     .introduction__image {
       &-bg {
         height: 400px;
-        object-position: unset;
+        object-position: top;
 
         @media (min-width: $bp-tablet) {
+          height: 500px;
           object-fit: cover;
 
           font-family: 'object-fit: cover'; // For object-fit-images polyfill
+        }
+
+        @media (min-width: $bp-desktop) {
+          object-position: 0 10%;
+          height: 600px;
         }
       }
     }

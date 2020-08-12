@@ -1,10 +1,10 @@
 ---
-title: Timm
-media_order: timm.jpg
+title: Christoph
+media_order: christoph.jpg
 allowCSS: default
 allowJS: default
 show_header_image: false
-membername: 'Timm Jakowatz,<br>Bass'
+membername: 'Christoph Lindner,<br>Gitarre'
 color: secondary
 direction: left
 ---

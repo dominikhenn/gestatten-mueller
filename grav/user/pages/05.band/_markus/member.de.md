@@ -1,10 +1,10 @@
 ---
-title: Catrin
-media_order: catrin.jpg
+title: Markus
+media_order: markus.jpg
 allowCSS: default
 allowJS: default
 show_header_image: false
-membername: 'Catrin Caspari,<br>Gesang'
+membername: 'Markus Iven,<br>Keys'
 color: secondary
 direction: left
 ---

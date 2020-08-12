@@ -1,10 +1,10 @@
 ---
-title: Timm
-media_order: timm.jpg
+title: Band
+media_order: band.jpg
 allowCSS: default
 allowJS: default
 show_header_image: false
-membername: 'Timm Jakowatz,<br>Bass'
+membername: 'Die Band'
 color: secondary
 direction: left
 ---

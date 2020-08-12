@@ -6,10 +6,13 @@ content:
         by: default
         dir: asc
         custom:
-            - _christina
-            - _timm
+            - _band
             - _viktor
-            - _catrin
+            - _timm
+            - _markus
+            - _christoph
+            - _dennis
+            - _christina
 allowCSS: default
 allowJS: default
 show_header_image: false
