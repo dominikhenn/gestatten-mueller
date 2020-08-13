@@ -8,11 +8,13 @@ taxonomies:
   - tag
 metadata:
   description: 'Michael Müller und seine fantastische Liveband'
-  Keywords: 'Michael Müller, Timm Jakovatz, Christina Heidel, Viktor Zhuravskyi, Catrin Caspari'
+  Keywords: 'Michael Müller, Timm Jakovatz, Christina Heidel, Viktor Zhuravskyi, Dennis Kleimann, Christoph Lindner, Markus Iven'
 summary:
   enabled: true
   format: short
   size: 300
   delimiter: '==='
+redirects: null
+routes: null
 blog:
   route: /blog
