@@ -33,7 +33,7 @@ footer,
     }
 
     @include desktop-up {
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     }
   }
 
@@ -60,6 +60,10 @@ footer,
   &__logo {
     margin-bottom: 40px;
 
+    @include desktop-up {
+      padding-right: 10px;
+    }
+
     img {
       margin: 0 auto;
       width: 150px;
@@ -72,10 +76,18 @@ footer,
 
   &__booking {
     margin-bottom: 40px;
+
+    @include desktop-up {
+      padding-right: 10px;
+    }
   }
 
   &__management {
     margin-bottom: 40px;
+
+    @include desktop-up {
+      padding-right: 10px;
+    }
 
     img {
       width: 100px;
@@ -90,6 +102,10 @@ footer,
   &__tour-service {
     margin-bottom: 40px;
 
+    @include desktop-up {
+      padding-right: 10px;
+    }
+
     img {
       width: 220px;
       margin: 0 auto 10px;
@@ -99,11 +115,36 @@ footer,
       }
 
       @include desktop-up {
-        width: 180px;
+        width: 140px;
       }
 
       @include big-desktop-up {
-        width: 220px;
+        width: 210px;
+      }
+    }
+  }
+
+  &__photos {
+    margin-bottom: 40px;
+
+    @include desktop-up {
+      padding-right: 10px;
+    }
+
+    img {
+      width: 220px;
+      margin: 0 auto 10px;
+
+      @include tablet-up {
+        margin: 0 0 10px 0;
+      }
+
+      @include desktop-up {
+        width: 140px;
+      }
+
+      @include big-desktop-up {
+        width: 210px;
       }
     }
   }

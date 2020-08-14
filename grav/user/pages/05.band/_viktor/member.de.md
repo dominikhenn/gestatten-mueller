@@ -1,6 +1,6 @@
 ---
 title: Viktor
-media_order: viktor.jpg
+media_order: viktor2.jpg
 allowCSS: default
 allowJS: default
 show_header_image: false

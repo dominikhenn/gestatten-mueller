@@ -33,6 +33,13 @@
             <a href="javascript:generateMailToLink('info', 'showtime-bonn.de')">info @ showtime-bonn.de</a>
         </p>
     </div>
+    <div class="footer__photos">
+        <h3>BANDFOTOS</h3>
+        <p>
+            <a target="_blank" rel="noopener" href="{{ 'mailto:rkl@singitas.de' }}">{{ media['theme://images/rkl.png'].html('', site.title|e('html')) }}</a><br>
+            <a href="javascript:generateMailToLink('rkl', 'singitas.de')">rkl @ singitas.de</a>
+        </p>
+    </div>
     <div class="footer__menu">
         <h3>LINKS</h3>
         <a class="footer-link" href="{{ page.find('/impressum').url() }}">Impressum</a>
