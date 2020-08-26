@@ -14,6 +14,8 @@
                     {% include 'partials/item/event-summary.html.twig' with {'page':child, parent:page} %}
                 {% endif %}
             {% endfor %}
+        {% else %}
+            {{ 'THEME_HYPERTEXT.EVENTS.NO_ENTRIES'|t }}
         {% endif %}
     </section>
     {% include 'partials/page/separator.html.twig' with {direction: 'left', color: 'tertiary'} %}

@@ -20,6 +20,8 @@ en:
         TRACK:
             PLAY_SONG: Play song
             SONG_TEXT: Display song lyrics
+        EVENTS:
+            NO_ENTRIES: We'll be back on stage soon!
     MONTHS_OF_THE_YEAR: [Jan, Feb, Mar, Apr, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
 de:
     THEME_HYPERTEXT:
@@ -43,4 +45,6 @@ de:
         TRACK:
             PLAY_SONG: Song abspielen
             SONG_TEXT: Songtext anzeigen
+        EVENTS:
+            NO_ENTRIES: Wir sind bald wieder auf der Bühne!
     MONTHS_OF_THE_YEAR: [Jan, Feb, Mär, Apr, Mai, Jun, Jul, Aug, Sep, Okt, Nov, Dez]
