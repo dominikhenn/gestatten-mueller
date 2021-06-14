@@ -43,6 +43,6 @@ Eine angemessene Lichtanlage zur Ausleuchtung der Bühne.
 Für Rückfragen bzgl. der Technik ist Herr Christian Longerich unter der Nummer 0178 - 2631916 erreichbar.
 
 #### Booking:
-Für das Booking ist Rolf Steinmetz 'conceptevent' zuständig und erreichbar unter: 
+Für das Booking ist 'conceptevent' zuständig und erreichbar unter: 
 
 booking@mueller-rockt.de - Mobil: 0160 - 90429484
