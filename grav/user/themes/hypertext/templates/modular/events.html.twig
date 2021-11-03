@@ -1,7 +1,7 @@
 <div id="modular-events" class="modular-wrapper modular-wrapper--events">
     <section class="container">
         <h2>{{ page.title }}</h2>
-        {% set collection = page.find('/termine').collection()|length > 0 ? page.find('/termine').collection().slice(0, 5) : [] %}
+        {% set collection = page.find('/termine').collection()|length > 0 ? page.find('/termine').collection().slice(0, 7) : [] %}
 
         {% if collection|length > 0 %}
             {% set year = '' %}
