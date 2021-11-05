@@ -104,12 +104,12 @@ class PageObject extends FlexPageObject
      */
     public function getRoute($query = []): ?Route
     {
-        $route = $this->route();
-        if (null === $route) {
+        $path = $this->route();
+        if (null === $path) {
             return null;
         }
 
-        $route = RouteFactory::createFromString($route);
+        $route = RouteFactory::createFromString($path);
         if ($lang = $route->getLanguage()) {
             $grav = Grav::instance();
             if (!$grav['config']->get('system.languages.include_default_lang')) {
@@ -263,6 +263,24 @@ class PageObject extends FlexPageObject
     }
 
     /**
+     * @param UserInterface|null $user
+     */
+    public function check(UserInterface $user = null): void
+    {
+        parent::check($user);
+
+        if ($user && $this->isMoved()) {
+            $parentKey = $this->getProperty('parent_key');
+
+            /** @var PageObject|null $parent */
+            $parent = $this->getFlexDirectory()->getObject($parentKey, 'storage_key');
+            if (!$parent || !$parent->isAuthorized('create', null, $user)) {
+                throw new \RuntimeException('Forbidden', 403);
+            }
+        }
+    }
+
+    /**
      * @param array|bool $reorder
      * @return FlexObject|FlexObjectInterface
      */
@@ -293,7 +311,7 @@ class PageObject extends FlexPageObject
         }
 
         // Reset original after save events have all been called.
-        $this->_original = null;
+        $this->_originalObject = null;
 
         return $instance;
     }
@@ -358,16 +376,26 @@ class PageObject extends FlexPageObject
     }
 
     /**
+     * @return bool
+     */
+    protected function isMoved(): bool
+    {
+        $storageKey = $this->getMasterKey();
+        $filesystem = Filesystem::getInstance(false);
+        $oldParentKey = ltrim($filesystem->dirname("/{$storageKey}"), '/');
+        $newParentKey = $this->getProperty('parent_key');
+
+        return $this->exists() && $oldParentKey !== $newParentKey;
+    }
+
+    /**
      * @param array $ordering
      * @return PageCollection|null
      */
     protected function reorderSiblings(array $ordering)
     {
         $storageKey = $this->getMasterKey();
-        $filesystem = Filesystem::getInstance(false);
-        $oldParentKey = ltrim($filesystem->dirname("/{$storageKey}"), '/');
-        $newParentKey = $this->getProperty('parent_key');
-        $isMoved = $this->exists() && $oldParentKey !== $newParentKey;
+        $isMoved = $this->isMoved();
         $order = !$isMoved ? $this->order() : false;
         if ($order !== false) {
             $order = (int)$order;
@@ -413,7 +441,8 @@ class PageObject extends FlexPageObject
 
         // Add missing siblings into the end of the list, keeping the previous ordering between them.
         foreach ($siblings as $sibling) {
-            $basename = preg_replace('|^\d+\.|', '', $sibling->getProperty('folder'));
+            $folder = (string)$sibling->getProperty('folder');
+            $basename = preg_replace('|^\d+\.|', '', $folder);
             if (!in_array($basename, $ordering, true)) {
                 $ordering[] = $basename;
             }
@@ -423,7 +452,8 @@ class PageObject extends FlexPageObject
         $ordering = array_flip(array_values($ordering));
         $count = count($ordering);
         foreach ($siblings as $sibling) {
-            $basename = preg_replace('|^\d+\.|', '', $sibling->getProperty('folder'));
+            $folder = (string)$sibling->getProperty('folder');
+            $basename = preg_replace('|^\d+\.|', '', $folder);
             $newOrder = $ordering[$basename] ?? null;
             $newOrder = null !== $newOrder ? $newOrder + 1 : (int)$sibling->order() + $count;
             $sibling->order($newOrder);
