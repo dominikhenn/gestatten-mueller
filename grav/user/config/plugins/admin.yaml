@@ -2,7 +2,7 @@ enabled: true
 route: /admin
 cache_enabled: false
 theme: grav
-logo_text: 'Müller Rockt'
+logo_text: 'Müller und Band'
 content_padding: true
 twofa_enabled: true
 log_viewer_files:

@@ -24,7 +24,7 @@ musicevents:
             -
                 performer_type: MusicGroup
                 name: 'Michael Müller'
-                sameAs: 'https://mueller-rockt.de/'
+                sameAs: 'https://muellerei.koeln/'
         musicevent_startdate: '19-01-2020 14:30'
         musicevent_enddate: '19-01-2020 14:55'
 orgaenabled: false

@@ -1,7 +1,7 @@
 enabled: true
-from: noreply@mueller-rockt.de
+from: noreply@muellerei.koeln
 from_name: 'Michael Müller'
-to: booking@mueller-rockt.de
+to: booking@muellerei.koeln
 to_name: 'Booking - Michael Müller'
 queue:
   enabled: false
