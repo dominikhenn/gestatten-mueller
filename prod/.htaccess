@@ -26,6 +26,9 @@ RewriteBase /
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
+RewriteCond %{HTTP_HOST} mueller-rockt.de$ [NC]
+RewriteRule ^(.*)$ https://muellerei.koeln/$1 [R=301,L]
+
 ## Begin - Exploits
 # If you experience problems on your site block out the operations listed below
 # This attempts to block the most common type of exploit `attempts` to Grav

@@ -66,7 +66,7 @@ Zedernweg 146
 Deutschland  
 Tel.: +49 177 4666198  
 E-Mail: info@muellerei.koeln  
-Website: http://muellerei.koeln
+Website: https://muellerei.koeln
 
 **3. COOKIES**  
 Die Internetseiten der Müller GbR verwenden Cookies. Cookies sind Textdateien, welche über einen Internetbrowser auf einem Computersystem abgelegt und gespeichert werden.
