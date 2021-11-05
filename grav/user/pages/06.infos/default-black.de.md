@@ -23,8 +23,6 @@ Schlagzeug, Bass, 2 Gitarren, Keyboards, Backing-Vocalistin auf. Eine erstklassi
 
 Mit modernster Technik ist **MÜLLER** in der Lage jede "Plug & Play" Situation zu meistern, d.h. die komplett autarke Bühnentechnik inkl. aller Instrumente und Mikrofone ist in wenigen Minuten spielfertig aufgebaut.
 
-**MÜLLER** spielt derzeit Kurzauftritte zwischen 20 - 45 Minuten (ab Ende September 90 Minuten)
-
 <br>
 <br>
 
