@@ -22,7 +22,7 @@ twittercardoptions: summary
 twittershareimg: /home/_welcome/intro1.jpg
 twittertitle: 'Michael Müller - DIE neue Rockstimme Kölns'
 twitterdescription: 'Ob Solo oder mit Band – mit handgemachter Musik und wertigen Texten, mit kölscher Mundart und Stimmgewalt wird MÜLLER die Menschen des Rheinlandes begeistern und die kölsche Musikszene weit über deren Grenze hinaus bereichern.'
-musiceventenabled: true
+musiceventenabled: false
 orgaenabled: true
 orga:
     name: 'Michael Müller'

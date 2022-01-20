@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common
  *
- * @copyright  Copyright (c) 2015 - 2021 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2022 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -21,6 +21,7 @@ use Grav\Common\Page\Markdown\Excerpts;
 use Grav\Common\Page\Pages;
 use Grav\Framework\Flex\Flex;
 use Grav\Framework\Flex\Interfaces\FlexObjectInterface;
+use Grav\Framework\Media\Interfaces\MediaInterface;
 use InvalidArgumentException;
 use Negotiation\Accept;
 use Negotiation\Negotiator;
@@ -150,7 +151,7 @@ abstract class Utils
 
         $domain = $domain ?: $grav['config']->get('system.absolute_urls', false);
 
-        return rtrim($uri->rootUrl($domain), '/') . '/' . ($resource ?? '');
+        return rtrim($uri->rootUrl($domain), '/') . '/' . ($resource ?: '');
     }
 
     /**
@@ -652,16 +653,17 @@ abstract class Utils
      * @param bool $force_download as opposed to letting browser choose if to download or render
      * @param int $sec Throttling, try 0.1 for some speed throttling of downloads
      * @param int $bytes Size of chunks to send in bytes. Default is 1024
+     * @param array $options Extra options: [mime, download_name, expires]
      * @throws Exception
      */
-    public static function download($file, $force_download = true, $sec = 0, $bytes = 1024)
+    public static function download($file, $force_download = true, $sec = 0, $bytes = 1024, array $options = [])
     {
         if (file_exists($file)) {
             // fire download event
-            Grav::instance()->fireEvent('onBeforeDownload', new Event(['file' => $file]));
+            Grav::instance()->fireEvent('onBeforeDownload', new Event(['file' => $file, 'options' => &$options]));
 
             $file_parts = pathinfo($file);
-            $mimetype = static::getMimeByExtension($file_parts['extension']);
+            $mimetype = $options['mime'] ?? static::getMimeByExtension($file_parts['extension']);
             $size = filesize($file); // File size
 
             // clean all buffers
@@ -679,7 +681,7 @@ abstract class Utils
 
             if ($force_download) {
                 // output the regular HTTP headers
-                header('Content-Disposition: attachment; filename="' . $file_parts['basename'] . '"');
+                header('Content-Disposition: attachment; filename="' . ($options['download_name'] ?? $file_parts['basename']) . '"');
             }
 
             // multipart-download and download resuming support
@@ -703,7 +705,7 @@ abstract class Utils
                 header('Content-Length: ' . $size);
 
                 if (Grav::instance()['config']->get('system.cache.enabled')) {
-                    $expires = Grav::instance()['config']->get('system.pages.expires');
+                    $expires = $options['expires'] ?? Grav::instance()['config']->get('system.pages.expires');
                     if ($expires > 0) {
                         $expires_date = gmdate('D, d M Y H:i:s T', time() + $expires);
                         header('Cache-Control: max-age=' . $expires);
@@ -829,6 +831,31 @@ abstract class Utils
         return $mimetypes;
     }
 
+    /**
+     * Return all extensions for given mimetype. The first extension is the default one.
+     *
+     * @param string $mime Mime type (eg 'image/jpeg')
+     * @return string[] List of extensions eg. ['jpg', 'jpe', 'jpeg']
+     */
+    public static function getExtensionsByMime($mime)
+    {
+        $mime = strtolower($mime);
+
+        $media_types = (array)Grav::instance()['config']->get('media.types');
+
+        $list = [];
+        foreach ($media_types as $extension => $type) {
+            if ($extension === '' || $extension === 'defaults') {
+                continue;
+            }
+
+            if (isset($type['mime']) && $type['mime'] === $mime) {
+                $list[] = $extension;
+            }
+        }
+
+        return $list;
+    }
 
     /**
      * Return the mimetype based on filename extension
@@ -1566,7 +1593,7 @@ abstract class Utils
 
         switch ($matches[0]) {
             case 'self':
-                if (null === $object) {
+                if (!$object instanceof MediaInterface) {
                     throw new RuntimeException(sprintf('Page not available for self@ reference: %s', $path));
                 }
 
@@ -1640,7 +1667,7 @@ abstract class Utils
      * @param string $path
      * @return string[]|null
      */
-    private static function resolveTokenPath(string $path): ?array
+    protected static function resolveTokenPath(string $path): ?array
     {
         if (strpos($path, '@') !== false) {
             $regex = '/^(@\w+|\w+@|@\w+@)([^:]*)(.*)$/u';
@@ -1774,7 +1801,7 @@ abstract class Utils
      *
      * @param string $string
      * @param bool $block Block or Line processing
-     * @param null $page
+     * @param PageInterface|null $page
      * @return string
      * @throws Exception
      */

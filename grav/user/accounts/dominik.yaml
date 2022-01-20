@@ -2,7 +2,7 @@ state: enabled
 email: dominik-henn@web.de
 fullname: 'Dominik Henn'
 title: Administrator
-hashed_password: $2y$10$RxKr3HDpunwA9aTBbZk1quR2E.ujFz9HmgdZ7.9UXY8lekboFyoI2
+hashed_password: $2y$10$WGy.JCLBQuS2HRfM8ZRidOh2Sw1tMunSaZrXDQAhS882zUkOy.UZy
 language: en
 twofa_enabled: false
 twofa_secret: 7QXAHRA6EDPHSJSVHZDPU3YPUK427G7T

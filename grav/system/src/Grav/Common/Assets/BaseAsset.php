@@ -3,7 +3,7 @@
 /**
  * @package    Grav\Common\Assets
  *
- * @copyright  Copyright (c) 2015 - 2021 Trilby Media, LLC. All rights reserved.
+ * @copyright  Copyright (c) 2015 - 2022 Trilby Media, LLC. All rights reserved.
  * @license    MIT License; see LICENSE file for details.
  */
 
@@ -26,8 +26,9 @@ abstract class BaseAsset extends PropertyObject
 {
     use AssetUtilsTrait;
 
-    protected const CSS_ASSET = true;
-    protected const JS_ASSET = false;
+    protected const CSS_ASSET = 1;
+    protected const JS_ASSET = 2;
+    protected const JS_MODULE_ASSET = 3;
 
     /** @var string|false */
     protected $asset;
@@ -69,7 +70,7 @@ abstract class BaseAsset extends PropertyObject
      * @param array $elements
      * @param string|null $key
      */
-    public function __construct(array $elements = [], $key = null)
+    public function __construct(array $elements = [], ?string $key = null)
     {
         $base_config = [
             'group' => 'head',
@@ -248,6 +249,7 @@ abstract class BaseAsset extends PropertyObject
      *
      * @return array
      */
+    #[\ReturnTypeWillChange]
     public function jsonSerialize()
     {
         return ['type' => $this->getType(), 'elements' => $this->getElements()];
