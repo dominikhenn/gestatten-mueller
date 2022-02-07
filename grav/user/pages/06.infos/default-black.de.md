@@ -18,29 +18,16 @@ musicalbumenabled: false
 facebookenable: true
 ---
 
-**MÜLLER** tritt live mit seiner 6 köpfigen Band in der Besetzung:
-Schlagzeug, Bass, 2 Gitarren, Keyboards, Backing-Vocalistin auf. Eine erstklassig spielende Band, die den Sound der CD Titel 1:1 auf die Bühne bringt.
+**MÜLLER** ist dank eines speziell konzipierten "Plug & Play-Systems" in der Lage, innerhalb weniger Minuten spielbereit auf der Bühne zu stehen.
 
-Mit modernster Technik ist **MÜLLER** in der Lage jede "Plug & Play" Situation zu meistern, d.h. die komplett autarke Bühnentechnik inkl. aller Instrumente und Mikrofone ist in wenigen Minuten spielfertig aufgebaut.
+Dazu wird ein von **MÜLLER** bereitgestelltes Signal (2 Kanäle, Stereo-Mix) an das vor Ort vorhandene Beschallungs-System übergeben.
+
+Details finden Sie in unserer TECHNISCHEN BÜHNENANWEISUNG, die wir Ihnen unter folgendem Link zum Download als Dokument (pdf) zur Verfügung stellen:
+
+[TECHNISCHE BÜHNENANWEISUNG MÜLLER](TECHNISCHE-BUEHNENANWEISUNG-MUELLER.pdf)
 
 <br>
-<br>
 
-### Technische Grundanforderungen:
+### RÜCKFRAGEN (TECHNIK)
 
-#### Bühne / Signalübergabe:
-1x Stromversorgung Schuko (230 Volt) mit mindestens 10 Metern Verlängerungskabel. Die Signalübergabe mit 2x XLR entweder Bühne Links oder Rechts, abhängig von der Situation vor Ort.
-
-#### PA:
-Eine dem Saal und der Veranstaltung, nach heutigem Standard, angemessene Beschallungsanlage. Einen mit der Technik vertrauten Tontechniker am Mischpult.
-
-#### Licht:
-Eine angemessene Lichtanlage zur Ausleuchtung der Bühne.
-
-#### Rückfragen:
-Für Rückfragen bzgl. der Technik ist Herr Christian Longerich unter der Nummer 0178 - 2631916 erreichbar.
-
-#### Booking:
-Für das Booking ist 'conceptevent' zuständig und erreichbar unter: 
-
-booking@muellerei.koeln - Mobil: 0160 - 90429484
+Sollten Sie Fragen bezüglich der Technik haben, steht Ihnen Herr Christian Longerich unter der Mobilfunknummer 0178-2631916 oder per Email unter <a href="javascript:generateMailToLink('technik', 'muellerei.koeln')">technik @ muellerei.koeln</a> gerne zur Verfügung.
