@@ -8,7 +8,6 @@ content:
         custom:
             - _band
             - _christina
-            - _christoph
             - _dennis
             - _markus
             - _timm

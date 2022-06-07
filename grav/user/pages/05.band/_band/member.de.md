@@ -1,6 +1,6 @@
 ---
 title: Band
-media_order: band.jpg
+media_order: band2.jpg
 allowCSS: default
 allowJS: default
 show_header_image: false

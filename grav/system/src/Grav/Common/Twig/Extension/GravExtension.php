@@ -116,6 +116,7 @@ class GravExtension extends AbstractExtension implements GlobalsInterface
             new TwigFilter('defined', [$this, 'definedDefaultFilter']),
             new TwigFilter('ends_with', [$this, 'endsWithFilter']),
             new TwigFilter('fieldName', [$this, 'fieldNameFilter']),
+            new TwigFilter('parent_field', [$this, 'fieldParentFilter']),
             new TwigFilter('ksort', [$this, 'ksortFilter']),
             new TwigFilter('ltrim', [$this, 'ltrimFilter']),
             new TwigFilter('markdown', [$this, 'markdownFunction'], ['needs_context' => true, 'is_safe' => ['html']]),
@@ -144,6 +145,7 @@ class GravExtension extends AbstractExtension implements GlobalsInterface
             new TwigFilter('yaml_encode', [$this, 'yamlEncodeFilter']),
             new TwigFilter('yaml_decode', [$this, 'yamlDecodeFilter']),
             new TwigFilter('nicecron', [$this, 'niceCronFilter']),
+            new TwigFilter('replace_last', [$this, 'replaceLastFilter']),
 
             // Translations
             new TwigFilter('t', [$this, 'translate'], ['needs_environment' => true]),
@@ -193,6 +195,7 @@ class GravExtension extends AbstractExtension implements GlobalsInterface
             new TwigFunction('gist', [$this, 'gistFunc']),
             new TwigFunction('nonce_field', [$this, 'nonceFieldFunc']),
             new TwigFunction('pathinfo', 'pathinfo'),
+            new TwigFunction('parseurl', 'parse_url'),
             new TwigFunction('random_string', [$this, 'randomStringFunc']),
             new TwigFunction('repeat', [$this, 'repeatFunc']),
             new TwigFunction('regex_replace', [$this, 'regexReplace']),
@@ -260,6 +263,10 @@ class GravExtension extends AbstractExtension implements GlobalsInterface
         ];
     }
 
+    /**
+     * @param mixed $var
+     * @return string
+     */
     public function print_r($var)
     {
         return print_r($var, true);
@@ -276,6 +283,20 @@ class GravExtension extends AbstractExtension implements GlobalsInterface
         $path = explode('.', rtrim($str, '.'));
 
         return array_shift($path) . ($path ? '[' . implode('][', $path) . ']' : '');
+    }
+
+    /**
+     * Filters field name by changing dot notation into array notation.
+     *
+     * @param  string $str
+     * @return string
+     */
+    public function fieldParentFilter($str)
+    {
+        $path = explode('.', rtrim($str, '.'));
+        array_pop($path);
+
+        return implode('.', $path);
     }
 
     /**
@@ -526,6 +547,21 @@ class GravExtension extends AbstractExtension implements GlobalsInterface
     {
         $cron = new Cron($at);
         return $cron->getText('en');
+    }
+
+    /**
+     * @param string|mixed $str
+     * @param string $search
+     * @param string $replace
+     * @return string|mixed
+     */
+    public function replaceLastFilter($str, $search, $replace)
+    {
+        if (is_string($str) && ($pos = mb_strrpos($str, $search)) !== false) {
+            $str = mb_substr($str, 0, $pos) . $replace . mb_substr($str, $pos + mb_strlen($search));
+        }
+
+        return $str;
     }
 
     /**

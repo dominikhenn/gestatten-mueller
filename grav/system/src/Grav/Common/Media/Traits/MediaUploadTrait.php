@@ -100,6 +100,10 @@ trait MediaUploadTrait
             'size' => $uploadedFile->getSize(),
         ];
 
+        if ($uploadedFile instanceof FormFlashFile) {
+            $uploadedFile->checkXss();
+        }
+
         return $this->checkFileMetadata($metadata, $filename, $settings);
     }
 
@@ -573,6 +577,8 @@ trait MediaUploadTrait
                 }
             }
         }
+
+        $this->hide($filename);
     }
 
     /**
