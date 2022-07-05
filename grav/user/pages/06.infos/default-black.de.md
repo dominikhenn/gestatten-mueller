@@ -24,7 +24,7 @@ Dazu wird ein von **MÜLLER** bereitgestelltes Signal (2 Kanäle, Stereo-Mix) an
 
 Details finden Sie in unserer TECHNISCHEN BÜHNENANWEISUNG, die wir Ihnen unter folgendem Link zum Download als Dokument (pdf) zur Verfügung stellen:
 
-[TECHNISCHE BÜHNENANWEISUNG MÜLLER](TECHNISCHE-BUEHNENANWEISUNG-MUELLER.pdf)
+[TECHNISCHE BÜHNENANWEISUNG MÜLLER](TECHNISCHE-BUEHNENANWEISUNG-MUELLER-03072022.pdf)
 
 <br>
 
