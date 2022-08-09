@@ -80,6 +80,23 @@ footer,
     @include desktop-up {
       padding-right: 10px;
     }
+
+    img {
+      width: 200px;
+      margin: 0 auto 10px;
+
+      @include tablet-up {
+        margin: 0 0 10px 0;
+      }
+
+      @include desktop-up {
+        width: 140px;
+      }
+
+      @include big-desktop-up {
+        width: 200px;
+      }
+    }
   }
 
   &__management {
