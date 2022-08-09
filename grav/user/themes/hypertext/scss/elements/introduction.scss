@@ -17,10 +17,12 @@
       object-position: 38% 16%;
       font-family: 'object-fit: cover'; // For object-fit-images polyfill
 
-      @media (min-width: $bp-tablet) {
-        object-fit: contain;
-        object-position: unset;
-        font-family: 'object-fit: contain'; // For object-fit-images polyfill
+      &--contain {
+        @media (min-width: $bp-tablet) {
+          object-fit: contain;
+          object-position: unset;
+          font-family: 'object-fit: contain'; // For object-fit-images polyfill
+        }
       }
     }
 
