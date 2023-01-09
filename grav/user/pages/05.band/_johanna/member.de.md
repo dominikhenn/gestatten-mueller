@@ -1,10 +1,10 @@
 ---
-title: Viktor
-media_order: viktor3.jpg
+title: Johanna
+media_order: johanna2023.jpg
 allowCSS: default
 allowJS: default
 show_header_image: false
-membername: 'Viktor Zhuravskyi,<br>Drums'
+membername: 'Johanna Amaya,<br>Backing Vocals'
 color: secondary
 direction: left
 ---

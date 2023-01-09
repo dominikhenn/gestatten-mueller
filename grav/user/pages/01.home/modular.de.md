@@ -61,12 +61,12 @@ addperson:
         person_address_addressLocality: Köln
         person_address_addressRegion: null
     -
-        person_name: 'Viktor Zhuravskyi'
+        person_name: 'Robbie Vondenhoff'
         person_jobTitle: 'Schlagzeug / Drums'
         person_address_addressLocality: Köln
         person_address_addressRegion: null
     -
-        person_name: 'Christina Heidel'
+        person_name: 'Johanna Amaya'
         person_jobTitle: Gesang
         person_address_addressLocality: Köln
         person_address_addressRegion: null

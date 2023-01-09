@@ -7,11 +7,11 @@ content:
         dir: asc
         custom:
             - _band
-            - _christina
             - _dennis
+            - _johanna
             - _markus
             - _timm
-            - _viktor
+            - _robbie
 allowCSS: default
 allowJS: default
 show_header_image: false
