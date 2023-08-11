@@ -631,6 +631,10 @@ class Validation
      */
     public static function typeEmail($value, array $params, array $field)
     {
+        if (empty($value)) {
+            return false;
+        }
+
         if (!isset($params['max'])) {
             $params['max'] = 320;
         }
@@ -638,7 +642,7 @@ class Validation
         $values = !is_array($value) ? explode(',', preg_replace('/\s+/', '', $value)) : $value;
 
         foreach ($values as $val) {
-            if (!(self::typeText($val, $params, $field) && filter_var($val, FILTER_VALIDATE_EMAIL))) {
+            if (!(self::typeText($val, $params, $field) && strpos($val, '@', 1))) {
                 return false;
             }
         }
