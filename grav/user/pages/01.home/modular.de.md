@@ -56,7 +56,7 @@ addperson:
         person_address_addressLocality: Köln
         person_address_addressRegion: null
     -
-        person_name: 'Timm Jakovatz'
+        person_name: 'Bass'
         person_jobTitle: 'Bass und Gesang'
         person_address_addressLocality: Köln
         person_address_addressRegion: null
@@ -66,7 +66,7 @@ addperson:
         person_address_addressLocality: Köln
         person_address_addressRegion: null
     -
-        person_name: 'Johanna Amaya'
+        person_name: 'Background'
         person_jobTitle: Gesang
         person_address_addressLocality: Köln
         person_address_addressRegion: null

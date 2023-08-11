@@ -6,11 +6,8 @@ content:
         by: default
         dir: asc
         custom:
-            - _band
             - _dennis
-            - _johanna
             - _markus
-            - _timm
             - _robbie
 allowCSS: default
 allowJS: default
