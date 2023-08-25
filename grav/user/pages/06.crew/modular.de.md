@@ -1,19 +1,16 @@
 ---
-title: Band
+title: Crew
 content:
     items: '@self.modular'
     order:
         by: default
         dir: asc
         custom:
-            - _dennis
-            - _markus
-            - _robbie
-            - _cui
-            - _daniel
+            - _christian
+            - _sascha
 allowCSS: default
 allowJS: default
 show_header_image: false
 ---
 
-Bandvorstellung
+Die guten Seelen bei MÜLLER, ohne die nichts geht !!!
