@@ -6,10 +6,8 @@ content:
         by: default
         dir: asc
         custom:
-            - _dennis
             - _markus
             - _robbie
-            - _cui
             - _daniel
 allowCSS: default
 allowJS: default

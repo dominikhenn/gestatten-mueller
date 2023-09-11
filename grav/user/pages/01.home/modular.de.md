@@ -71,7 +71,7 @@ addperson:
         person_address_addressLocality: Köln
         person_address_addressRegion: null
     -
-        person_name: 'Dennis Kleimann'
+        person_name: 'Gitarre'
         person_jobTitle: Gitarre
         person_address_addressLocality: Köln
         person_address_addressRegion: null
