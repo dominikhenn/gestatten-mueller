@@ -6,6 +6,41 @@
                 {{ media['theme://images/michaelmueller3.jpg'].html('', site.title|e('html'), 'introduction__image-bg') }}
                 {#            {% if page == 'home' %}{{ media['theme://images/logo.png'].html('', site.title|e('html'), 'introduction__image-mm') }}{% endif %}#}
                 <div class="introduction__gradient introduction__gradient--right"></div>
+                <div class="introduction__teaser">
+                    <style>
+                        .introduction__teaser {
+                            background: #fff;
+                            position: absolute;
+                            bottom: 85px;
+                            padding: 10px 10px;
+                            border: 2px solid #c50f13;
+                            text-align: center;
+                            left: 20px;
+                            width: calc(100vw - 65px);
+
+                            @media (min-width: 768px) {
+                                left: auto;
+                                right: 100px;
+                                max-width: 400px;
+                                bottom: 130px;
+                            }
+                        }
+
+                        .introduction__teaser h2 {
+                            margin-bottom: 0;
+                        }
+
+                        .introduction__teaser p {
+                            margin: 0 0 5px;
+                            font-size: 20px;
+                            line-height: 24px;
+                        }
+                    </style>
+                    <h2>Gewinnspiel</h2>
+                    <p>Poste deine Choreo zum neunen Song "He jeith et lang" auf TikTok und gewinne 500€</p>
+                    <p><a href="/gewinnspiel" target="_blank">Zum Wettbewerb</a></p>
+                    <p><a href="https://www.youtube.com/watch?v=M73U8N3rhbw" target="_blank">Zum YouTube Video</a></p>
+                </div>
             </div>
         </section>
     </div>

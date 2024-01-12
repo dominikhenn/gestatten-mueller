@@ -1,3 +1,38 @@
+# v1.7.44
+## 01/05/2024
+
+1. [](#new)
+   * Added PHP `8.3` to tests [#3782](https://github.com/getgrav/grav/pull/3782)
+   * Added debugger messages when Page routes conflict
+   * Added `ISO 8601` date format [#3721](https://github.com/getgrav/grav/pull/37210)
+   * Added support for `.vcf` (vCard) in media configuration [#3772](https://github.com/getgrav/grav/pull/3772)
+1. [](#improved) 
+   * Update jQuery to `v3.6.4` [#3713](https://github.com/getgrav/grav/pull/3713)
+   * Updated vendor libraries including Dom-Sanitizer `v1.0.7` that addresses an XSS issue 
+   * Updated `bin/composer.phar` to latest `2.6.6`
+   * Updated vendor libraries to latest
+   * Updated language files
+   * Updated copyright year
+1. [](#bugfix)
+   * Fixed a math rounding issue with number validation when using floating point steps [#3761](https://github.com/getgrav/grav/issues/3761)
+   * Fixed an issue with `Inflector::ordinalize()` not working as expected [#3759](https://github.com/getgrav/grav/pull/3759)
+   * Fixed various issues with file extension checking with dangerous extensions [#3756(https://github.com/getgrav/grav/pull/3756)]
+   * Fix for invalid input to foreach in `UserGroupObject` [#3724](https://github.com/getgrav/grav/pull/3724)
+   * Fixed exception: `Property 'jsmodule_pipeline_include_externals' does not exist in object` [#3661](https://github.com/getgrav/grav/pull/3661)
+   * Fixed `too few arguments exception` in FlexObjects [#3658](https://github.com/getgrav/grav/pull/3658)
+
+# v1.7.43
+## 10/02/2023
+
+1. [](#new)
+   * Add the ability to programatically set a page's `modified` timestamp via a `modified:` frontmatter entry
+2. [](#improved)
+   * Update vendor libraries
+   * Include `phar` in the list of `security.uploads_dangerous_extensions`
+   * When enabled `system.languages.debug` now dumps **Key -> Value** to debugger [#3752](https://github.com/getgrav/grav/issues/3752)
+   * Updated built-in composer to latest `2.6.4` [#3748](https://github.com/getgrav/grav/issues/3748)
+   * Added support for `@import` to ensure paths are rewritten correctly in CSS pipeline [#3750](https://github.com/getgrav/grav/pull/3750)
+
 # v1.7.42.3
 ## 07/18/2023
 

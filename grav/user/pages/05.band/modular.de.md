@@ -9,6 +9,7 @@ content:
             - _markus
             - _robbie
             - _daniel
+            - _donovan
 allowCSS: default
 allowJS: default
 show_header_image: false
