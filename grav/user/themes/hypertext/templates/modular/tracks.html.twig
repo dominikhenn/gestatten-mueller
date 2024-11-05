@@ -3,6 +3,8 @@
         <div>
             <h2>{{ page.title }}</h2>
             <div>
+                {% include 'partials/page/track.html.twig' with {key: '4', track: 'einzs.mp3', pdf: 'einzs.pdf', title: 'Et is nie zo spät', text: '„Et is nie zo spät“ – Ein Lied über Chancen und den richtigen Moment.'} %}
+                {% include 'partials/page/track.html.twig' with {key: '5', track: 'lkv.mp3', pdf: 'lkv.pdf', title: 'La Kölsche Vita', text: '„La Kölsche Vita“ – Die Leichtigkeit des Seins auf Kölsch.'} %}
                 {% include 'partials/page/track.html.twig' with {key: '2', track: 'he-jebore.mp3', pdf: 'he-jebore.pdf', title: 'He jebore', text: '„He jebore“ – erzählt von der Heimatverbundenheit und von der  Sehnsucht immer wieder in seine Stadt zurückzukehren.'} %}
                 {% include 'partials/page/track.html.twig' with {key: '1', track: 'sorje.mp3', pdf: 'sorje.pdf', title: 'Steck’ Dir ding Sorje aan d’r Hot', text: '„Steck’ Dir ding Sorje aan d’r Hot“ – eine Einladung zum Feiern ohne dabei den Bezug zur Realität zu verlieren.'} %}
                 {% include 'partials/page/track.html.twig' with {key: '0', track: 'bad-koelle.mp3', pdf: 'bad-koelle.pdf', title: 'Bad Kölle', text: '„Bad Kölle“ – ein Partysong mit einem ironischen Augenzwinkern auf seine geliebte Stadt.'} %}
